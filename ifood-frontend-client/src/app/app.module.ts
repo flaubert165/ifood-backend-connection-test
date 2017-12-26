@@ -28,7 +28,8 @@ export function mqttServiceFactory(): MqttService {
     hostname: environment.mqtt.hostname,
     port: environment.mqtt.port,
     path : environment.mqtt.path,
-    protocol: <'wss' | 'ws'> environment.mqtt.protocol
+    protocol: <'wss' | 'ws'> environment.mqtt.protocol,
+    keepalive: 120
   });
 }
 

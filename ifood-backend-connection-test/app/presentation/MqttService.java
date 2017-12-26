@@ -21,7 +21,6 @@ public class MqttService implements MqttCallbackExtended{
             client = new MqttClient(ConfigFactory.load().getString("mqtt.broker.host"),
                     MqttClient.generateClientId(), new MemoryPersistence());
             client.setCallback(this);
-
             MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
             mqttConnectOptions.setAutomaticReconnect(true);
             mqttConnectOptions.setKeepAliveInterval(120);
@@ -97,5 +96,6 @@ public class MqttService implements MqttCallbackExtended{
     public void deliveryComplete(IMqttDeliveryToken token) {
 
     }
+
 }
 

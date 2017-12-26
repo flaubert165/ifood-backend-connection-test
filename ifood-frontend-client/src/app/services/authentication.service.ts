@@ -30,7 +30,6 @@ export class AuthenticationService {
   }
 
   logout(user: User) {
-    // console.log(JSON.stringify(user));
     this.mqttService.unsafePublish('restaurants/logout/', user.id.toString(), {qos: 1, retain: true});
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');

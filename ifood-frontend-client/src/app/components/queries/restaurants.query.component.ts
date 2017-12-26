@@ -31,7 +31,6 @@ export class RestaurantsQueryComponent implements OnInit {
 
       let restaurantOn = JSON.parse(data.payload.toString());
 
-      // find duplicate register on unavailable array
       if (this.unavailableUsers.some(r => r.id === restaurantOn.id)) {
         let index = this.unavailableUsers.findIndex(r => r.id === restaurantOn.id);
         this.unavailableUsers.splice(index, 1);
@@ -45,14 +44,6 @@ export class RestaurantsQueryComponent implements OnInit {
         this.users.splice(index2, 1);
         this.users.push(restaurantOn);
       }
-
-  /*   if (this.unavailableUsers.some(r => r.id === restaurant.id)) {
-        let index = this.unavailableUsers.findIndex(r => r.id === restaurant.id);
-        this.unavailableUsers.splice(index, 1);
-        this.availableUsers.push(restaurant);
-      } else {
-        this.availableUsers.push(restaurant);
-      }*/
 
     });
 

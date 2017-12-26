@@ -24,8 +24,6 @@ public class UserController extends Controller {
     }
 
     public Result getAll() throws UserException {
-/*        response().setHeader(CONNECTION, "Keep-Alive");
-        response().setHeader("Keep-Alive", "timeout=2, max=10");*/
         return ok(Json.toJson(this._service.getUsers()));
     }
 }

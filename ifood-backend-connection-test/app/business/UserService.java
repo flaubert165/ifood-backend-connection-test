@@ -37,6 +37,7 @@ public class UserService implements IUserRepository {
 
     @Override
     public List<UserOutputDto> getUsers() throws UserException {
+
         return this._repository.getUsers();
     }
 
