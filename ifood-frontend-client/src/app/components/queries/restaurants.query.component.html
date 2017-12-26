@@ -1,0 +1,46 @@
+<div class="col-md-12">
+  <h2>Hi! {{currentUser.name}}!</h2>
+  <p>You're logged!!! <a [routerLink]="['/login']">+Logout</a></p>
+  <h3>All registered restaurants ranking:</h3>
+  <table class="col-lg-12" border="1">
+    <tr align="center">
+      <td>id</td>
+      <td>name</td>
+      <td>status</td>
+      <td>minutesOffline</td>
+    </tr>
+    <tr  *ngFor="let user of users" align="center">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.status}}</td>
+      <td>{{user.minutesOffline}}</td>
+    </tr>
+  </table>
+
+  <h3>All Availables Restaurants:</h3>
+  <table class="col-lg-12" border="1">
+    <tr align="center">
+      <td>id</td>
+      <td>name</td>
+      <td>status</td>
+    </tr>
+    <tr  *ngFor="let item of availableUsers" align="center">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.status}}</td>
+    </tr>
+  </table>
+  <h3>All Unavailables Restaurants:</h3>
+  <table class="col-lg-12" border="1">
+    <tr align="center">
+      <td>id</td>
+      <td>name</td>
+      <td>status</td>
+    </tr>
+    <tr  *ngFor="let item2 of unavailableUsers" align="center">
+      <td>{{item2.id}}</td>
+      <td>{{item2.name}}</td>
+      <td>{{item2.status}}</td>
+    </tr>
+  </table>
+</div>
