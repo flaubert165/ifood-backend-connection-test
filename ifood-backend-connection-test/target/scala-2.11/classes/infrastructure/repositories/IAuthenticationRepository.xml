@@ -1,0 +1,15 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="infrastructure.repositories.IAuthenticationRepository">
+    <update id="login">
+        UPDATE user SET status = #{arg1} WHERE id = #{arg0}
+    </update>
+    <update id="logout">
+        UPDATE user SET status = #{arg1} WHERE id = #{arg0}
+    </update>
+    <select id="getUserByEmail" resultType="domain.entities.User">
+        SELECT * FROM user WHERE email = #{arg0} LIMIT 1
+    </select>
+    <select id="getUserById" resultType="domain.entities.User">
+        SELECT * FROM user WHERE id = #{arg0} LIMIT 1
+    </select>
+</mapper>
