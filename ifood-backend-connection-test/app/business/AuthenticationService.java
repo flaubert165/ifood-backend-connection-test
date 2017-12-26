@@ -1,6 +1,5 @@
 package business;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.google.inject.Inject;
 import domain.dto.inputs.SignInDto;
 import domain.dto.outputs.UserOutputDto;
@@ -13,8 +12,6 @@ import play.libs.Json;
 import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
 
-import java.util.Arrays;
-
 public class AuthenticationService {
 
     private IAuthenticationRepository _repository;
@@ -26,10 +23,12 @@ public class AuthenticationService {
         this._repository = authRepository;
         this._mqttService = mqttService;
 
-        this._mqttService.observer("restaurants/offline/").subscribe(mqttMessage -> {
-            JsonNode teste = Json.parse(mqttMessage.toString());
-            UserOutputDto user = Json.fromJson(teste, UserOutputDto.class);
-            this.logout(user);
+        this._mqttService.observer("restaurants/logout/").subscribe(mqttMessage -> {
+
+            if(mqttMessage != null) {
+                long id = new Long(mqttMessage.toString());
+                this.logout(id);
+            }
         });
     }
 
@@ -59,17 +58,16 @@ public class AuthenticationService {
         return userOutput;
     }
 
-    public void logout(UserOutputDto user) throws AuthenticationException, UserException {
+    public void logout(long id) throws AuthenticationException, UserException {
 
-            /*ADICIONAR OBSERVER PARA DESLOGAR VIA MQTT*/
-            //UserOutputDto user = _repository.getUserById(id);
+            UserOutputDto user = this._repository.getUserById(id);
 
             this._repository.logout(user.getId(), TimeIntervalHelper.verifyStatusWhenCreateAndLogout());
 
-            //this._repository.getUserById(user.getId());
+            user.setStatus(TimeIntervalHelper.verifyStatusWhenCreateAndLogout());
 
-            /*this._mqttService.publish("restaurants/offline/",
-                Json.stringify(Json.toJson(user)).getBytes(), 1);*/
+            this._mqttService.publish("restaurants/offline/",
+                Json.stringify(Json.toJson(user)).getBytes(), 1);
     }
 
 }

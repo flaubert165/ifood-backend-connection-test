@@ -21,34 +21,36 @@ export class RestaurantsQueryComponent implements OnInit {
 
 
 
-  constructor(private userService: UserService, private mqttService: MqttService){
+  constructor(private userService: UserService, private mqttService: MqttService) {
     this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    this.loadAllUsers();
   }
 
   ngOnInit() {
-    this.loadAllUsers();
-
     this.availableSubscription = this.mqttService.observe('restaurants/online/').subscribe((data: MqttMessage) => {
 
-      let restaurant = JSON.parse(data.payload.toString());
+      let restaurantOn = JSON.parse(data.payload.toString());
 
+      // find duplicate register on unavailable array
+      if (this.unavailableUsers.some(r => r.id === restaurantOn.id)) {
+        let index = this.unavailableUsers.findIndex(r => r.id === restaurantOn.id);
+        this.unavailableUsers.splice(index, 1);
+        this.availableUsers.push(restaurantOn);
+      } else {
+        let index = this.availableUsers.findIndex(r => r.id === restaurantOn.id);
+        this.availableUsers.splice(index, 1);
+        this.availableUsers.push(restaurantOn);
 
-     /* if (this.unavailableUsers.some(r => r.id === restaurant.id) &&
-        (restaurant.status === Status.AvailableOnline || restaurant.status === Status.UnavailableOffline)) {
+        let index2 = this.users.findIndex(r => r.id === restaurantOn.id);
+        this.users.splice(index2, 1);
+        this.users.push(restaurantOn);
+      }
+
+  /*   if (this.unavailableUsers.some(r => r.id === restaurant.id)) {
         let index = this.unavailableUsers.findIndex(r => r.id === restaurant.id);
         this.unavailableUsers.splice(index, 1);
         this.availableUsers.push(restaurant);
-      }else{
-        this.availableUsers.push(restaurant);
-      }*/
-
-      /*if ((!this.unavailableUsers.some(r => r.id === restaurant.id) &&
-          !this.availableUsers.some(r => r.id === restaurant.id)) &&
-          (restaurant.status === Status.AvailableOnline || restaurant.status === Status.AvailableOffline)) {
-        this.availableUsers.push(restaurant);
-      }else{
-        let index = this.unavailableUsers.findIndex(r => r.id === restaurant.id);
-        this.unavailableUsers.splice(index, 1);
+      } else {
         this.availableUsers.push(restaurant);
       }*/
 
@@ -56,19 +58,21 @@ export class RestaurantsQueryComponent implements OnInit {
 
     this.unavailableSubscription = this.mqttService.observe('restaurants/offline/').subscribe((data: MqttMessage) => {
 
-      let restaurant = JSON.parse(data.payload.toString());
+      let restaurantOff = JSON.parse(data.payload.toString());
 
-      /*if (){
-
-      }*/
-
-      /*if(!this.availableUsers.some(r => r.id === restaurant.id) && restaurant.status === Status.UnavailableOffline) {
-        this.unavailableUsers.push(restaurant);
-      }else{
-        let index = this.availableUsers.findIndex(r => r.id === restaurant.id && r.status === Status.UnavailableOffline);
+      if (!this.availableUsers.some(r => r.id === restaurantOff.id) && restaurantOff.status === 'UnavailableOffline') {
+        let index = this.availableUsers.findIndex(r => r.id === restaurantOff.id);
         this.availableUsers.splice(index, 1);
-        this.unavailableUsers.push(restaurant);
-      }*/
+        this.unavailableUsers.push(restaurantOff);
+      } else if(this.availableUsers.some(r => r.id === restaurantOff.id) && restaurantOff.status === 'AvailableOffline') {
+        let index = this.availableUsers.findIndex(r => r.id === restaurantOff.id);
+        this.availableUsers.splice(index, 1);
+        this.availableUsers.push(restaurantOff);
+
+        let index2 = this.users.findIndex(r => r.id === restaurantOff.id);
+        this.users.splice(index2, 1);
+        this.users.push(restaurantOff);
+      }
 
     });
 
@@ -80,18 +84,14 @@ export class RestaurantsQueryComponent implements OnInit {
 
       this.users = users;
 
-     /* for(let user of users){
+     for(let user of users){
 
-        if (this.unavailableUsers.some(r => r.id === user.id) &&
-          (user.status === Status.AvailableOnline || user.status === Status.UnavailableOffline)) {
-          let index = this.unavailableUsers.findIndex(r => r.id === user.id);
-          this.unavailableUsers.splice(index, 1);
+        if (user.status === 'AvailableOnline' || user.status === 'AvailableOffline') {
           this.availableUsers.push(user);
-        }else{
-          this.availableUsers.push(user);
+        } else  {
+          this.unavailableUsers.push(user);
         }
-
-      }*/
+      }
 
     });
 

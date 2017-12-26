@@ -1,11 +1,13 @@
 package utils;
 
+import domain.dto.outputs.UnavailabilityScheduleOutputDto;
 import domain.enums.Status;
 
 import java.sql.Time;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalTime;
+import java.util.List;
 
 public class TimeIntervalHelper {
 
@@ -28,6 +30,23 @@ public class TimeIntervalHelper {
         Time closeTime = toSqlTime(CLOSETIME);
 
         return now.after(openTime) && now.before(closeTime) ? Status.AvailableOnline : Status.UnavailableOffline;
+    }
+
+    public static Status verifyStatus(List<UnavailabilityScheduleOutputDto> schedules){
+
+        Time now = toSqlTime(LocalTime.now());
+        Time openTime = toSqlTime(OPENTIME);
+        Time closeTime = toSqlTime(CLOSETIME);
+
+        for(UnavailabilityScheduleOutputDto schedule : schedules){
+
+            if(){
+
+            }
+
+        }
+
+        return Status.AvailableOffline;
     }
 
 
