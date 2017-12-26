@@ -1,0 +1,34 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="infrastructure.repositories.IUnavailabilityScheduleRepository">
+    <select id="getById" resultType="domain.dto.outputs.UnavailabilityScheduleOutputDto">
+        SELECT * FROM unavailability_schedule WHERE id = #{arg0}
+    </select>
+    <select id="getByUserId" resultType="domain.dto.outputs.UnavailabilityScheduleOutputDto">
+        SELECT * FROM unavailability_schedule WHERE userId = #{arg0}
+    </select>
+    <insert id="create" useGeneratedKeys="true">
+        INSERT INTO unavailability_schedule
+        (
+          start,
+          end,
+          userId
+        )
+        VALUES
+        (
+          #{startTime},
+          #{endTime},
+          #{userId}
+        )
+    </insert>
+    <update id="sumUserMinutesOffline">
+        UPDATE user SET minutesOffline = minutesOffline + #{arg0}
+        WHERE id = #{arg1}
+    </update>
+    <update id="subtractUserMinutesOffline">
+        UPDATE user SET minutesOffline = minutesOffline - #{arg0}
+        WHERE id = #{arg1}
+    </update>
+    <delete id="delete">
+        DELETE FROM unavailability_schedule WHERE id = #{arg0}
+    </delete>
+</mapper>

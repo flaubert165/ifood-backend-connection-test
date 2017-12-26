@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+#AUTH ROUTES
+POST    /auth/login                 presentation.controllers.AuthenticationController.login()
+GET    /auth/logout                  presentation.controllers.AuthenticationController.logout()
+
+#USER ROUTES
+GET     /user                       presentation.controllers.UserController.getAll()
+POST    /user/register              presentation.controllers.UserController.create()
+
+#SCHEDULE ROUTES
+POST    /scheduling/register        presentation.controllers.UnavalabilityScheduleController.create()
+GET     /scheduling/:id             presentation.controllers.UnavalabilityScheduleController.getByUserId(id: Long)
+DELETE  /scheduling/:id             presentation.controllers.UnavalabilityScheduleController.delete(id: Long)
+
+#OTHERS
+GET     /ui                         controllers.Assets.at(path="/public", file="index.html")
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

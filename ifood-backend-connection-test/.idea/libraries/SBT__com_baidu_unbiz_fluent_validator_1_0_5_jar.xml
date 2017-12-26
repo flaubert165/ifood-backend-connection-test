@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.baidu.unbiz:fluent-validator:1.0.5:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.baidu.unbiz/fluent-validator/jars/fluent-validator-1.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.baidu.unbiz/fluent-validator/srcs/fluent-validator-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
