@@ -9,7 +9,7 @@
     <select id="getUserByEmail" resultType="domain.entities.User">
         SELECT * FROM user WHERE email = #{arg0} LIMIT 1
     </select>
-    <select id="getUserById" resultType="domain.entities.User">
+    <select id="getUserById" resultType="domain.dto.outputs.UserOutputDto">
         SELECT * FROM user WHERE id = #{arg0} LIMIT 1
     </select>
 </mapper>

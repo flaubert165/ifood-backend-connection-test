@@ -4,7 +4,7 @@
 
 #AUTH ROUTES
 POST    /auth/login                 presentation.controllers.AuthenticationController.login()
-GET    /auth/logout                  presentation.controllers.AuthenticationController.logout()
+GET     /auth/                      presentation.controllers.AuthenticationController.logout()
 
 #USER ROUTES
 GET     /user                       presentation.controllers.UserController.getAll()

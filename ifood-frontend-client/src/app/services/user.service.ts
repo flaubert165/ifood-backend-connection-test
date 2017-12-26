@@ -27,10 +27,6 @@ export class UserService {
     return this.http.delete(environment.serverUrl + '/user/' + id, this.jwt());
   }
 
-  logout(id: string){
-    this.http.get(environment.serverUrl + '/auth/' + id, this.jwt()).map((response: Response) => response.json());
-  }
-
   // private helper methods
   private jwt() {
     // create authorization header with jwt token

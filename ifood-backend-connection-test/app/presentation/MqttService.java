@@ -1,4 +1,4 @@
-package infrastructure;
+package presentation;
 
 import com.typesafe.config.ConfigFactory;
 import io.reactivex.subjects.PublishSubject;
@@ -8,7 +8,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import play.Logger;
 import java.util.HashMap;
 
-public class MqttService {
+public class MqttService implements MqttCallbackExtended{
 
     private MqttClient client;
     private HashMap<String, Subject<MqttMessage>> maps;
@@ -20,38 +20,13 @@ public class MqttService {
 
             client = new MqttClient(ConfigFactory.load().getString("mqtt.broker.host"),
                     MqttClient.generateClientId(), new MemoryPersistence());
-            client.setCallback(new MqttCallbackExtended() {
-
-                @Override
-                public void connectComplete(boolean reconnect, String serverURI) {
-                    if (reconnect) {
-                        Logger.info("Conexão com broker MQTT reestabelecida com sucesso!");
-                    }
-                    else {
-                        Logger.info("MQTT broker conectado com sucesso!");
-                    }
-                }
-
-                @Override
-                public void connectionLost(Throwable throwable) {
-                    Logger.error("A conexão com broker MQTT foi perdida!", throwable);
-                }
-
-                @Override
-                public void messageArrived(String topic, MqttMessage mqttMessage) throws Exception {
-
-                }
-
-                @Override
-                public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-
-                }
-            });
+            client.setCallback(this);
 
             MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
             mqttConnectOptions.setAutomaticReconnect(true);
             mqttConnectOptions.setKeepAliveInterval(120);
             client.connect(mqttConnectOptions);
+
         } catch (MqttException e) {
             Logger.error("A conexão com MQTT broker não pôde ser estabelecida!", e);
         }
@@ -66,10 +41,12 @@ public class MqttService {
         }
         else {
             try {
+
                 Subject<MqttMessage> createdSubject = PublishSubject.create();
                 maps.put(topic, createdSubject);
                 client.subscribe(topic, (t, m) -> createdSubject.onNext(m));
                 subject = createdSubject;
+
             } catch (MqttException e) {
                 subject = null;
                 e.printStackTrace();
@@ -92,6 +69,33 @@ public class MqttService {
         } catch (MqttException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void connectComplete(boolean reconnect, String serverURI) {
+
+        if (reconnect) {
+            Logger.info("Conexão com broker MQTT reestabelecida com sucesso!");
+        }
+        else {
+            Logger.info("MQTT broker conectado com sucesso!");
+        }
+
+    }
+
+    @Override
+    public void connectionLost(Throwable cause) {
+        Logger.error("A conexão com broker MQTT foi perdida!", cause);
+    }
+
+    @Override
+    public void messageArrived(String topic, MqttMessage message) throws Exception {
+        Logger.error(message.toString());
+    }
+
+    @Override
+    public void deliveryComplete(IMqttDeliveryToken token) {
+
     }
 }
 

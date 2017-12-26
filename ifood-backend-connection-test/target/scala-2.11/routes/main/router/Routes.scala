@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/italosantana/Desktop/ifood-backend-connection-test/ifood-backend-connection-test/conf/routes
-// @DATE:Sun Dec 24 18:52:55 BRT 2017
+// @DATE:Tue Dec 26 10:38:28 BRT 2017
 
 package router
 
@@ -52,7 +52,7 @@ class Routes(
 
   def documentation = List(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """auth/login""", """presentation.controllers.AuthenticationController.login()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """auth/logout""", """presentation.controllers.AuthenticationController.logout()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """auth/""", """presentation.controllers.AuthenticationController.logout()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user""", """presentation.controllers.UserController.getAll()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/register""", """presentation.controllers.UserController.create()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """scheduling/register""", """presentation.controllers.UnavalabilityScheduleController.create()"""),
@@ -86,7 +86,7 @@ class Routes(
 
   // @LINE:7
   private[this] lazy val presentation_controllers_AuthenticationController_logout1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("auth/logout")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("auth/")))
   )
   private[this] lazy val presentation_controllers_AuthenticationController_logout1_invoker = createInvoker(
     AuthenticationController_1.logout(),
@@ -97,7 +97,7 @@ class Routes(
       Nil,
       "GET",
       """""",
-      this.prefix + """auth/logout"""
+      this.prefix + """auth/"""
     )
   )
 

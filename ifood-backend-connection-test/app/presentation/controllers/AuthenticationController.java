@@ -5,7 +5,6 @@ import com.google.inject.Inject;
 import domain.dto.inputs.SignInDto;
 import exceptions.AuthenticationException;
 import exceptions.UserException;
-import org.eclipse.paho.client.mqttv3.MqttException;
 import play.libs.Json;
 import play.mvc.BodyParser;
 import play.mvc.Controller;
@@ -25,9 +24,8 @@ public class AuthenticationController extends Controller {
         return ok(Json.toJson(this._service.login(Json.fromJson(request().body().asJson(), SignInDto.class))));
     }
 
-    @BodyParser.Of(BodyParser.Json.class)
     public Result logout() throws AuthenticationException, UserException {
-        this._service.logout();
+        //this._service.logout();
         return ok();
     }
 

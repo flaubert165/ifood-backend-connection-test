@@ -10,9 +10,11 @@ import {Status} from "../models/enums/status";
 
 @Injectable()
 export class AuthenticationService {
-  currentUser: User;
+
+
+
   constructor(private http: Http, private mqttService: MqttService) {
-    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
   }
 
   login(email: string, password: string) {
@@ -27,9 +29,9 @@ export class AuthenticationService {
       });
   }
 
-  logout() {
-    /*console.log(JSON.stringify(this.currentUser));
-    this.mqttService.unsafePublish('restaurants/offline/', JSON.stringify(this.currentUser), {qos: 1, retain: true});*/
+  logout(user: User) {
+    console.log(JSON.stringify(user));
+    this.mqttService.unsafePublish('restaurants/offline/', JSON.stringify(user), {qos: 1, retain: true});
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
   }
