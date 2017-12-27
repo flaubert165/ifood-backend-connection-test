@@ -74,7 +74,7 @@ public class AuthenticationService implements IAuthenticationRepository{
             userOutput.setName(user.getName());
             userOutput.setToken(SecurityHelper.generateSessionToken(user.getEmail()));
 
-            updateOfflineTime(user.getId());
+            updateOfflineTime(user.getId(), user.getLastRequest());
 
             this.login(user.getId(), userOutput.getStatus());
 
@@ -124,16 +124,15 @@ public class AuthenticationService implements IAuthenticationRepository{
      * @param userId
      * @throws AuthenticationException
      */
-    public void updateOfflineTime(long userId) throws AuthenticationException{
+    public void updateOfflineTime(long userId, Date lastRequest) throws AuthenticationException{
 
         java.util.Date now = new java.util.Date();
         Date requestTime = new Date(now.getDate());
-        Date lastRequest = _userService.getLastRequest(userId);
 
         if(lastRequest == null){
-            _userService.updateLastRequest(requestTime);
+            _userService.updateLastRequest(requestTime, userId);
         }else {
-            _userService.updateLastRequest(requestTime);
+            _userService.updateLastRequest(requestTime, userId);
             long minutes = TimeIntervalHelper.calculatesOfflineUserTime(lastRequest.toInstant());
             _userService.updateMinutesOffline(minutes, userId);
         }

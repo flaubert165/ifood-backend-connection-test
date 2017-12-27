@@ -3,6 +3,8 @@ package domain.entities;
 import domain.Entity;
 import domain.enums.Status;
 
+import java.sql.Date;
+
 public class User implements Entity {
     private long id;
     private String email;
@@ -10,13 +12,14 @@ public class User implements Entity {
     private String name;
     private Status status;
     private long minutesOffline;
+    private Date lastRequest;
 
     public User(){
 
     }
 
     public User(long id, String email, String password, String name,
-                 Status status, long minutesOffline){
+                 Status status, long minutesOffline, Date lastRequest){
 
         setId(id);
         setEmail(email);
@@ -24,6 +27,7 @@ public class User implements Entity {
         setName(name);
         setStatus(status);
         setMinutesOffline(minutesOffline);
+        setLastRequest(lastRequest);
     }
 
     @Override
@@ -70,5 +74,13 @@ public class User implements Entity {
 
     public void setMinutesOffline(long minutesOffline) {
         this.minutesOffline = minutesOffline;
+    }
+
+    public Date getLastRequest() {
+        return lastRequest;
+    }
+
+    public void setLastRequest(Date lastRequest) {
+        this.lastRequest = lastRequest;
     }
 }

@@ -29,7 +29,7 @@
         )
     </insert>
     <update id="updateLastRequest">
-        UPDATE user SET lastRequest = #{arg1} WHERE id = #{arg0}
+        UPDATE user SET lastRequest = #{arg0} WHERE id = #{arg1}
     </update>
     <update id="updateMinutesOffline">
         UPDATE user SET minutesOffline = minutesOffline + #{arg0}

@@ -61,8 +61,8 @@ public class UserService implements IUserRepository{
     }
 
     @Override
-    public void updateLastRequest(Date lastRequest) {
-        this._repository.updateLastRequest(lastRequest);
+    public void updateLastRequest(Date lastRequest, long userId) {
+        this._repository.updateLastRequest(lastRequest, userId);
     }
 
     @Override
