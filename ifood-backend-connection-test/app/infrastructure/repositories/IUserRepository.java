@@ -13,4 +13,5 @@ public interface IUserRepository {
     UserOutputDto getUserById(long id) throws UserException;
     User getUserByEmail(String email) throws UserException;
     void delete(long id) throws UserException;
+    /*void updateLastRequest() throws UserException;*/
 }

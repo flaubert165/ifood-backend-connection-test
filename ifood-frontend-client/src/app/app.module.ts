@@ -14,14 +14,12 @@ import {UserService} from "./services/user.service";
 import {AlertComponent} from "./components/alert.component";
 import {environment} from "../environments/environment";
 import {MqttModule, MqttService} from "ngx-mqtt";
-import {RestaurantsQueryComponent} from "./components/queries/restaurants.query.component";
-import {RegisterUnavailabilityScheduleComponent} from "./components/confections/register.unavailability.schedule.component";
 import {UnavailabilityScheduleService} from "./services/unavailability.schedule.service";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {AngularDateTimePickerModule} from "angular2-datetimepicker";
-import {UnavailabilitySchedulesQueryComponent} from "./components/queries/unavailability.schedules.query.component";
 import {QueriesModule} from "./components/queries/queries.module";
 import {ConfectionsModule} from "./components/confections/confections.module";
+import {NgIdleKeepaliveModule} from "@ng-idle/keepalive";
 
 export function mqttServiceFactory(): MqttService {
   return new MqttService({
@@ -54,7 +52,8 @@ export function mqttServiceFactory(): MqttService {
       useFactory: mqttServiceFactory
     }),
     NgbModule.forRoot(),
-    AngularDateTimePickerModule
+    AngularDateTimePickerModule,
+    NgIdleKeepaliveModule.forRoot()
   ],
   providers: [
     UserService,
@@ -63,6 +62,8 @@ export function mqttServiceFactory(): MqttService {
     AlertService,
     UnavailabilityScheduleService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

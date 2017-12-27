@@ -13,7 +13,7 @@ public class SecurityHelper {
 
     public static String generateSessionToken(String email) {
 
-        Date expires = new Date(new Date().getTime() + 86400000);
+        Date expires = new Date(new Date().getTime() + 120000);
         Key key = MacProvider.generateKey();
         String compactJws = Jwts.builder()
                 .setSubject(email)

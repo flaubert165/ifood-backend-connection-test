@@ -19,6 +19,10 @@ public class AuthenticationController extends Controller {
         this._service = service;
     }
 
+    public Result status() throws UserException {
+        return ok();
+    }
+
     @BodyParser.Of(BodyParser.Json.class)
     public Result login() throws Exception {
         return ok(Json.toJson(this._service.login(Json.fromJson(request().body().asJson(), SignInDto.class))));

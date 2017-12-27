@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/italosantana/Desktop/ifood-backend-connection-test/ifood-backend-connection-test/conf/routes
-// @DATE:Tue Dec 26 10:38:28 BRT 2017
+// @DATE:Wed Dec 27 11:20:05 BRT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,26 +13,26 @@ import _root_.play.libs.F
 // @LINE:6
 package presentation.controllers {
 
-  // @LINE:14
+  // @LINE:15
   class ReverseUnavalabilityScheduleController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:14
+    // @LINE:15
     def create(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "scheduling/register")
     }
   
-    // @LINE:16
+    // @LINE:17
     def delete(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("DELETE", _prefix + { _defaultPrefix } + "scheduling/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
-    // @LINE:15
+    // @LINE:16
     def getByUserId(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "scheduling/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -40,20 +40,20 @@ package presentation.controllers {
   
   }
 
-  // @LINE:10
+  // @LINE:11
   class ReverseUserController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:10
+    // @LINE:11
     def getAll(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "user")
     }
   
-    // @LINE:11
+    // @LINE:12
     def create(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "user/register")
@@ -67,6 +67,12 @@ package presentation.controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:8
+    def status(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "auth/status")
+    }
   
     // @LINE:7
     def logout(): Call = {
