@@ -4,16 +4,18 @@ import com.google.inject.Inject;
 import domain.dto.inputs.UserDto;
 import domain.dto.outputs.UserOutputDto;
 import domain.entities.User;
+import exceptions.AuthenticationException;
 import exceptions.UserException;
 import infrastructure.repositories.IUserRepository;
 import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class UserService {
+public class UserService implements IUserRepository{
 
     private IUserRepository _repository;
 
@@ -39,9 +41,33 @@ public class UserService {
         return this._repository.getUsers();
     }
 
+    @Override
+    public UserOutputDto getUserById(long id) throws UserException {
+        return this._repository.getUserById(id);
+    }
+
+    @Override
+    public User getUserByEmail(String email) throws UserException {
+        return this._repository.getUserByEmail(email);
+    }
+
     public void delete(long id) throws UserException {
         this._repository.delete(id);
     }
 
+    @Override
+    public Date getLastRequest(long id) throws AuthenticationException {
+        return this._repository.getLastRequest(id);
+    }
+
+    @Override
+    public void updateLastRequest(Date lastRequest) {
+        this._repository.updateLastRequest(lastRequest);
+    }
+
+    @Override
+    public void updateMinutesOffline(long minutes, long userId) {
+        this._repository.updateMinutesOffline(minutes, userId);
+    }
 
 }

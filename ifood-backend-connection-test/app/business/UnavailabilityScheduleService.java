@@ -8,7 +8,7 @@ import utils.TimeIntervalHelper;
 
 import java.util.List;
 
-public class UnavailabilityScheduleService {
+public class UnavailabilityScheduleService implements IUnavailabilityScheduleRepository{
 
     private IUnavailabilityScheduleRepository _repository;
 
@@ -23,17 +23,12 @@ public class UnavailabilityScheduleService {
             throw new Exception();
         }
 
-        /*if(TimeIntervalHelper.isBetweenAvailableTime(schedule.getStart(), schedule.getEnd())) {
+        this._repository.create(schedule);
+    }
 
-            long minutesOffline = TimeIntervalHelper.
-                    calculateUnavailabiltyDuration(schedule.getStart().toInstant(),
-                            schedule.getEnd().toInstant());
-*/
-
-            this._repository.create(schedule);
-
-        /*    this._repository.sumUserMinutesOffline(minutesOffline, schedule.getUserId());
-        }*/
+    @Override
+    public UnavailabilityScheduleOutputDto getById(long id) throws Exception {
+        return this._repository.getById(id);
     }
 
     public List<UnavailabilityScheduleOutputDto> getByUserId(long id) throws Exception {
@@ -45,13 +40,7 @@ public class UnavailabilityScheduleService {
 
         UnavailabilityScheduleOutputDto schedule = this._repository.getById(id);
 
-        /*long minutesOffline = TimeIntervalHelper.
-                calculateUnavailabiltyDuration(schedule.getStart().toInstant(),
-                        schedule.getEnd().toInstant());*/
-
         this._repository.delete(id);
-
-        /*this._repository.subtractUserMinutesOffline(minutesOffline, schedule.getUserId());*/
 
     }
 }

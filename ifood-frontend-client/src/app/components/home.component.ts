@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.keepAlive.onPing.subscribe( data => {
       console.log('Keepalive.ping() called!' + new Date());
     });
-    this.keepAlive.interval(10);
+    this.keepAlive.interval(60);
 
     this.idle.setIdle(120);
     this.idle.setTimeout(120);

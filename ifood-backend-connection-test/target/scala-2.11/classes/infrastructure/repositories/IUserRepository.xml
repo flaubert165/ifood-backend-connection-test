@@ -3,11 +3,14 @@
     <select id="getUsers" resultType="domain.dto.outputs.UserOutputDto">
         SELECT * FROM user ORDER BY minutesOffline
     </select>
-    <select id="getUserById" resultType="domain.entities.User">
+    <select id="getUserById" resultType="domain.dto.outputs.UserOutputDto">
         SELECT * FROM user WHERE id = #{arg0} LIMIT 1
     </select>
     <select id="getUserByEmail" resultType="domain.entities.User">
         SELECT * FROM user WHERE email = #{arg0} LIMIT 1
+    </select>
+    <select id="getLastRequest" resultType="Date">
+        SELECT lastRequest FROM user WHERE id = #{arg0} LIMIT 1
     </select>
     <insert id="create" useGeneratedKeys="true">
         INSERT INTO user
@@ -25,4 +28,11 @@
         #{status}
         )
     </insert>
+    <update id="updateLastRequest">
+        UPDATE user SET lastRequest = #{arg1} WHERE id = #{arg0}
+    </update>
+    <update id="updateMinutesOffline">
+        UPDATE user SET minutesOffline = minutesOffline + #{arg0}
+        WHERE id = #{arg1}
+    </update>
 </mapper>

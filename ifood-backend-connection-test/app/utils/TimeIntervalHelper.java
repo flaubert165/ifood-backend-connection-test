@@ -3,6 +3,7 @@ package utils;
 import domain.dto.outputs.UnavailabilityScheduleOutputDto;
 import domain.enums.Status;
 
+import java.sql.Date;
 import java.sql.Time;
 import java.time.Duration;
 import java.time.Instant;
@@ -14,6 +15,10 @@ public class TimeIntervalHelper {
     public static final LocalTime OPENTIME = LocalTime.of(9,59,59, 00000) ;
     public static final LocalTime CLOSETIME = LocalTime.of(23,1,00, 00000) ;
 
+    /**
+     *
+     * @return
+     */
     public static Status verifyStatusWhenCreateAndLogout() {
 
         Time now = toSqlTime(LocalTime.now());
@@ -23,34 +28,36 @@ public class TimeIntervalHelper {
         return now.after(openTime) && now.before(closeTime) ? Status.AvailableOffline : Status.UnavailableOffline;
     }
 
-    public static Status verifyStatusWhenSignIn() {
-
-        Time now = toSqlTime(LocalTime.now());
-        Time openTime = toSqlTime(OPENTIME);
-        Time closeTime = toSqlTime(CLOSETIME);
-
-        return now.after(openTime) && now.before(closeTime) ? Status.AvailableOnline : Status.UnavailableOffline;
-    }
-
+    /**
+     *
+      * @param schedules
+     * @return
+     */
    public static Status verifyStatus(List<UnavailabilityScheduleOutputDto> schedules){
 
         Time now = toSqlTime(LocalTime.now());
 
-        for(UnavailabilityScheduleOutputDto schedule : schedules){
 
-            if((now.before(schedule.getStart()) || now.equals(schedule.getStart())) &&
-                    (now.before((schedule.getEnd())) || now.equals(schedule.getEnd())) ||
-                    !isBetweenAvailableTime(now)){
-                return Status.UnavailableOffline;
-            } else if(isBetweenAvailableTime(now)){
-                return Status.AvailableOnline;
+            for(UnavailabilityScheduleOutputDto schedule : schedules){
+
+                if((now.before(schedule.getStart()) || now.equals(schedule.getStart())) &&
+                        (now.before((schedule.getEnd())) || now.equals(schedule.getEnd())) ||
+                        !isBetweenAvailableTime(now)){
+                    return Status.UnavailableOffline;
+                } else if(isBetweenAvailableTime(now)){
+                    return Status.AvailableOnline;
+                }
             }
-        }
 
         return Status.AvailableOffline;
     }
 
 
+    /**
+     * convert localtime to sqltime
+     * @param localTime
+     * @return
+     */
     public static Time toSqlTime(LocalTime localTime) {
         return Time.valueOf(localTime);
     }
@@ -64,6 +71,12 @@ public class TimeIntervalHelper {
         return minutes;
     }
 
+    /**
+     * check if two times are between the open and close times
+     * @param start
+     * @param end
+     * @return boolean
+     */
     public static boolean isBetweenAvailableTime(java.util.Date start, java.util.Date end){
 
         Time startTime = toSqlTime(LocalTime.of(start.getHours(),
@@ -76,6 +89,11 @@ public class TimeIntervalHelper {
         return startTime.after(openTime) && endTime.before(closeTime);
     }
 
+    /**
+     * check if current time is between open and close times
+     * @param now
+     * @return
+     */
     public static boolean isBetweenAvailableTime(java.util.Date now){
 
         Time timeNow = toSqlTime(LocalTime.of(now.getHours(),
@@ -84,5 +102,18 @@ public class TimeIntervalHelper {
         Time closeTime = toSqlTime(CLOSETIME);
 
         return timeNow.after(openTime) && timeNow.before(closeTime);
+    }
+
+    public static long calculatesOfflineUserTime(Instant lastRequest){
+
+        java.util.Date now = new java.util.Date();
+        Instant instantNow = new Date(now.getDate()).toInstant();
+
+        Duration duration = Duration.between(lastRequest, instantNow);
+
+        long minutes = duration.toMinutes();
+
+        return  minutes - 2;
+
     }
 }

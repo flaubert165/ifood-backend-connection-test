@@ -3,6 +3,7 @@ package infrastructure.repositories;
 import domain.dto.inputs.UserDto;
 import domain.dto.outputs.UserOutputDto;
 import domain.entities.User;
+import exceptions.AuthenticationException;
 import exceptions.UserException;
 
 import java.sql.Date;
@@ -14,6 +15,7 @@ public interface IUserRepository {
     UserOutputDto getUserById(long id) throws UserException;
     User getUserByEmail(String email) throws UserException;
     void delete(long id) throws UserException;
-    Date getLastRequest(long id) throws UserException;
-    /*void updateLastRequest() throws UserException;*/
+    Date getLastRequest(long id) throws AuthenticationException;
+    void updateLastRequest(Date lastRequest);
+    void updateMinutesOffline(long minutes, long userId);
 }
