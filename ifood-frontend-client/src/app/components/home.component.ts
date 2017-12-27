@@ -1,16 +1,13 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { UserService } from '../services/user.service';
 import { User } from '../models/user';
 import {AuthenticationService} from "../services/authentication.service";
 import {Http, RequestMethod} from "@angular/http";
 import {ActivatedRoute, Router} from "@angular/router";
 import {DEFAULT_INTERRUPTSOURCES, Idle} from "@ng-idle/core";
 import {Keepalive} from "@ng-idle/keepalive";
-import {MqttService} from "ngx-mqtt";
 import {HttpHeaders, HttpRequest} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {isUndefined} from "util";
-import {KeepAliveService} from "../services/keep.alive.service";
 
 @Component({
   moduleId: module.id,
@@ -22,11 +19,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   header: any;
 
   constructor(private authenticationService: AuthenticationService,
-              private http: Http,
               private router: Router,
               private idle: Idle,
-              private keepAlive: Keepalive,
-              private route: ActivatedRoute) {
+              private keepAlive: Keepalive) {
     this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     this.header = new HttpHeaders({ 'Authorization': 'Bearer ' + this.currentUser.token});
 

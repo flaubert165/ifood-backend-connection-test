@@ -3,16 +3,12 @@ import {Subscription} from "rxjs/Subscription";
 import {MqttMessage, MqttService} from "ngx-mqtt";
 import {UserService} from "../../services/user.service";
 import {User} from "../../models/user";
-import {Status} from "../../models/enums/status";
-import {Observable} from "rxjs/Observable";
-import {Http} from "@angular/http";
 import {environment} from "../../../environments/environment";
-import {Scheduler} from "rxjs/Scheduler";
 import {isUndefined} from "util";
 import {DEFAULT_INTERRUPTSOURCES} from "@ng-idle/core";
 import {HttpHeaders, HttpRequest} from "@angular/common/http";
 import {AuthenticationService} from "../../services/authentication.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import { Router} from "@angular/router";
 import {Idle} from "@ng-idle/core";
 import {Keepalive} from "@ng-idle/keepalive";
 
@@ -34,11 +30,9 @@ export class RestaurantsQueryComponent implements OnInit {
   constructor(private userService: UserService,
               private mqttService: MqttService,
               private authenticationService: AuthenticationService,
-              private http: Http,
               private router: Router,
               private idle: Idle,
-              private keepAlive: Keepalive,
-              private route: ActivatedRoute) {
+              private keepAlive: Keepalive) {
     this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     this.loadAllUsers();
 

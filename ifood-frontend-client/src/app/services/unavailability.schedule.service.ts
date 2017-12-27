@@ -17,7 +17,8 @@ export class UnavailabilityScheduleService {
   }
 
   getByUserId(userId: number) {
-    return this.http.get(environment.serverUrl + '/scheduling/' + userId.toString(), this.jwt()).map((response: Response) => response.json());
+    return this.http.get(environment.serverUrl + '/scheduling/' + userId.toString(), this.jwt())
+      .map((response: Response) => response.json());
   }
 
   create(obj: UnavalabilitySchedule) {

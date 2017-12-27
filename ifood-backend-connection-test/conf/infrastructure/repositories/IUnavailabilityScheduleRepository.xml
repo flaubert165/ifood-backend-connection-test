@@ -15,8 +15,8 @@
         )
         VALUES
         (
-          #{startTime},
-          #{endTime},
+          #{start},
+          #{end},
           #{userId}
         )
     </insert>
