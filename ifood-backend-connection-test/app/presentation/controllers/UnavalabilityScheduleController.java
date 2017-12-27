@@ -17,11 +17,13 @@ public class UnavalabilityScheduleController extends Controller {
         this._service = service;
     }
 
+
     @BodyParser.Of(BodyParser.Json.class)
     public Result create() throws Exception {
         this._service.create(Json.fromJson(request().body().asJson(), UnavailabilityScheduleDto.class));
         return ok();
     }
+
 
     public Result getByUserId(long userId) throws Exception {
         return  ok(Json.toJson(this._service.getByUserId(userId)));

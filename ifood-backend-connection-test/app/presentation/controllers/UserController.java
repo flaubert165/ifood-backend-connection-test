@@ -5,10 +5,7 @@ import com.google.inject.Inject;
 import domain.dto.inputs.UserDto;
 import exceptions.UserException;
 import play.libs.Json;
-import play.mvc.BodyParser;
-import play.mvc.Controller;
-import play.mvc.Http;
-import play.mvc.Result;
+import play.mvc.*;
 
 public class UserController extends Controller {
 

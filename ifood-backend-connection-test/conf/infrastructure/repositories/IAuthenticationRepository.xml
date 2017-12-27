@@ -12,4 +12,8 @@
     <select id="getUserById" resultType="domain.dto.outputs.UserOutputDto">
         SELECT * FROM user WHERE id = #{arg0} LIMIT 1
     </select>
+    <select id="getUnavailabilityScheduleById" resultType="domain.dto.outputs.UnavailabilityScheduleOutputDto">
+        SELECT * FROM unavailability_schedule WHERE userId = #{arg0} AND
+        (date(start) = date(now())) AND (date(end) = date(now()));
+    </select>
 </mapper>

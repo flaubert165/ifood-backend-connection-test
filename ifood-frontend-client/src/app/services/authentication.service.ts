@@ -1,21 +1,14 @@
 import { Injectable } from '@angular/core';
 import {Http, Headers, Response, RequestOptions} from '@angular/http';
-import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import {environment} from "../../environments/environment";
 import {User} from "../models/user";
 import {MqttService} from "ngx-mqtt";
-import {Status} from "../models/enums/status";
 
 
 @Injectable()
 export class AuthenticationService {
-
-
-
-  constructor(private http: Http, private mqttService: MqttService) {
-
-  }
+  constructor(private http: Http, private mqttService: MqttService) { }
 
   login(email: string, password: string) {
     return this.http.post(environment.serverUrl + '/auth/login', { email: email, password: password })

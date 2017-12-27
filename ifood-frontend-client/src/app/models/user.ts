@@ -5,4 +5,5 @@ export class User {
   password: string;
   status: string;
   minutesOffline: number;
+  token: string;
 }

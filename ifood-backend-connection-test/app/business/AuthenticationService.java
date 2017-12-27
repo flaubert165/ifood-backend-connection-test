@@ -2,6 +2,7 @@ package business;
 
 import com.google.inject.Inject;
 import domain.dto.inputs.SignInDto;
+import domain.dto.outputs.UnavailabilityScheduleOutputDto;
 import domain.dto.outputs.UserOutputDto;
 import domain.entities.User;
 import exceptions.AuthenticationException;
@@ -11,6 +12,7 @@ import infrastructure.repositories.IAuthenticationRepository;
 import play.libs.Json;
 import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
+import java.util.List;
 
 public class AuthenticationService {
 
@@ -19,8 +21,8 @@ public class AuthenticationService {
 
     @Inject
     public AuthenticationService(MqttService mqttService,
-                                 IAuthenticationRepository authRepository){
-        this._repository = authRepository;
+                                 IAuthenticationRepository repository){
+        this._repository = repository;
         this._mqttService = mqttService;
 
         this._mqttService.observer("restaurants/logout/").subscribe(mqttMessage -> {
@@ -38,15 +40,17 @@ public class AuthenticationService {
 
         User user = _repository.getUserByEmail(dto.getEmail());
 
-        userOutput.setId(user.getId());
-        userOutput.setName(user.getName());
-        userOutput.setStatus(TimeIntervalHelper.verifyStatusWhenSignIn());
-
         if(SecurityHelper.checkPassword(dto.getPassword(), user.getPassword())){
+
+            List<UnavailabilityScheduleOutputDto> schedules = _repository.getUnavailabilityScheduleById(user.getId());
+
+            userOutput.setId(user.getId());
+            userOutput.setName(user.getName());
+            userOutput.setStatus(TimeIntervalHelper.verifyStatusWhenSignIn());
 
             userOutput.setToken(SecurityHelper.generateSessionToken(user.getEmail()));
 
-            _repository.login(user.getId(), userOutput.getStatus());
+            _repository.login(user.getId(), TimeIntervalHelper.verifyStatus(schedules));
 
             this._mqttService.publish("restaurants/online/",
                     Json.stringify(Json.toJson(userOutput)).getBytes(), 1);

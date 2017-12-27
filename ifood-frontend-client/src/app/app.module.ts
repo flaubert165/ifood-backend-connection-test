@@ -20,6 +20,7 @@ import {AngularDateTimePickerModule} from "angular2-datetimepicker";
 import {QueriesModule} from "./components/queries/queries.module";
 import {ConfectionsModule} from "./components/confections/confections.module";
 import {NgIdleKeepaliveModule} from "@ng-idle/keepalive";
+import {KeepAliveService} from "./services/keep.alive.service";
 
 export function mqttServiceFactory(): MqttService {
   return new MqttService({
@@ -60,7 +61,8 @@ export function mqttServiceFactory(): MqttService {
     AuthGuard,
     AuthenticationService,
     AlertService,
-    UnavailabilityScheduleService
+    UnavailabilityScheduleService,
+    KeepAliveService
   ],
   bootstrap: [
     AppComponent

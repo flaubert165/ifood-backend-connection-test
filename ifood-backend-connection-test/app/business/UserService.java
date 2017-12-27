@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class UserService implements IUserRepository {
+public class UserService {
 
     private IUserRepository _repository;
 
@@ -22,7 +22,6 @@ public class UserService implements IUserRepository {
         this._repository = repository;
     }
 
-    @Override
     public void create(UserDto user) throws UserException {
 
         user.setStatus(TimeIntervalHelper.verifyStatusWhenCreateAndLogout());
@@ -35,25 +34,14 @@ public class UserService implements IUserRepository {
         }
     }
 
-    @Override
     public List<UserOutputDto> getUsers() throws UserException {
 
         return this._repository.getUsers();
     }
 
-    @Override
-    public UserOutputDto getUserById(long id) {
-        return null;
-    }
-
-    @Override
     public void delete(long id) throws UserException {
         this._repository.delete(id);
     }
 
-    @Override
-    public User getUserByEmail(String email) {
-        return null;
-    }
 
 }

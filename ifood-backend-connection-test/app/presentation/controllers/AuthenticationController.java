@@ -8,6 +8,7 @@ import exceptions.UserException;
 import play.libs.Json;
 import play.mvc.BodyParser;
 import play.mvc.Controller;
+import play.mvc.Http;
 import play.mvc.Result;
 
 public class AuthenticationController extends Controller {
@@ -19,8 +20,8 @@ public class AuthenticationController extends Controller {
         this._service = service;
     }
 
-    public Result status() throws UserException {
-        return ok();
+    public Result status() throws Exception {
+        return ok(Json.toJson(Http.Status.OK));
     }
 
     @BodyParser.Of(BodyParser.Json.class)
