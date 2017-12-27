@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/UnavailabilityScheduleService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/UnavailabilityScheduleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IAuthenticationRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IAuthenticationRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/AuthenticationController.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/AuthenticationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/UnavalabilityScheduleController.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/UnavalabilityScheduleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/UserController.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/AuthenticationService.java" afterPath="$PROJECT_DIR$/app/business/AuthenticationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java" afterPath="$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/UserService.java" afterPath="$PROJECT_DIR$/app/business/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/infrastructure/repositories/IAuthenticationRepository.java" afterPath="$PROJECT_DIR$/app/infrastructure/repositories/IAuthenticationRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" afterPath="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java" afterPath="$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/presentation/controllers/UnavalabilityScheduleController.java" afterPath="$PROJECT_DIR$/app/presentation/controllers/UnavalabilityScheduleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/presentation/controllers/UserController.java" afterPath="$PROJECT_DIR$/app/presentation/controllers/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" afterPath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/infrastructure/repositories/IAuthenticationRepository.xml" afterPath="$PROJECT_DIR$/conf/infrastructure/repositories/IAuthenticationRepository.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IAuthenticationRepository.xml" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IAuthenticationRepository.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/login.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/models/user.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/models/user.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/keep.alive.service.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/keep.alive.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,7 +40,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="864">
@@ -93,6 +63,18 @@
               <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restaurants.query.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,8 +117,8 @@
       <file leaf-file-name="home.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="198">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="28" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -219,7 +201,6 @@
         <option value="$PROJECT_DIR$/app/presentation/MqttService.java" />
         <option value="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" />
         <option value="$PROJECT_DIR$/app/utils/SecurityHelper.java" />
-        <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/node_modules/ng2-idle-keepalive/node_modules/rxjs/Subject.d.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/package.json" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/tsconfig.json" />
@@ -242,6 +223,7 @@
         <option value="$PROJECT_DIR$/app/infrastructure/repositories/IAuthenticationRepository.java" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/keep.alive.service.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts" />
+        <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
       </list>
     </option>
   </component>
@@ -684,7 +666,7 @@
       <workItem from="1514291641667" duration="7410000" />
       <workItem from="1514299500942" duration="406000" />
       <workItem from="1514299928700" duration="24738000" />
-      <workItem from="1514382272959" duration="19985000" />
+      <workItem from="1514382272959" duration="20427000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -711,7 +693,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206877000" />
+    <option name="totallyTimeSpent" value="207319000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -724,7 +706,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22512437" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -895,16 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,28 +1209,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/services/keep.alive.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/node_modules/@angular/core/src/event_emitter.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="649">
           <caret line="66" column="4" lean-forward="false" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1269,16 +1222,6 @@
         <state relative-caret-position="126">
           <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,6 +1235,44 @@
             <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
             <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
             <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/services/keep.alive.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
