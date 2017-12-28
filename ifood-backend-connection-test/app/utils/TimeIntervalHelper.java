@@ -5,9 +5,7 @@ import domain.enums.Status;
 
 import java.sql.Date;
 import java.sql.Time;
-import java.time.Duration;
-import java.time.Instant;
-import java.time.LocalTime;
+import java.time.*;
 import java.util.List;
 
 public class TimeIntervalHelper {
@@ -104,16 +102,35 @@ public class TimeIntervalHelper {
         return timeNow.after(openTime) && timeNow.before(closeTime);
     }
 
-    public static long calculatesOfflineUserTime(Instant lastRequest){
+    public static long calculatesOfflineUserTime(java.util.Date lastRequest) throws Exception{
+        long minutes;
+        Time lastRequestTime = toSqlTime(LocalTime.of(lastRequest.getHours(),
+                lastRequest.getMinutes(), lastRequest.getSeconds(), 00000));
+        LocalDateTime now = LocalDateTime.now();
+        Time nowTime = toSqlTime(LocalTime.of(now.getHour(),
+                now.getMinute(), now.getSecond(), 00000));
+        Instant instantNow = now.toInstant(ZoneOffset.UTC);
+        Time openTime = toSqlTime(OPENTIME);
+        Time closeTime = toSqlTime(CLOSETIME);
 
-        java.util.Date now = new java.util.Date();
-        Instant instantNow = new Date(now.getDate()).toInstant();
-
-        Duration duration = Duration.between(lastRequest, instantNow);
-
-        long minutes = duration.toMinutes();
-
-        return  minutes - 2;
-
+        // between opentime and closetime
+        if(lastRequestTime.after(openTime) && nowTime.before(closeTime)){
+            Duration duration = Duration.between(lastRequest.toInstant(), instantNow);
+            minutes = duration.toMinutes();
+            return minutes;
+            // after opentime and closetime, check the proportional value
+        } else if(lastRequestTime.after(openTime) && !nowTime.before(closeTime)){
+            Duration duration = Duration.between(lastRequestTime.toInstant(), closeTime.toInstant());
+            minutes = duration.toMinutes();
+            return minutes;
+            // before opentime and closetime, check the proportional value
+        } else if(!lastRequestTime.after(openTime) && nowTime.before(closeTime)){
+            Duration duration = Duration.between(openTime.toInstant(), instantNow);
+            minutes = duration.toMinutes();
+            return minutes;
+        } else{
+            minutes = 0L;
+            return minutes;
+        }
     }
 }

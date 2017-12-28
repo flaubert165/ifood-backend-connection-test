@@ -11,6 +11,7 @@ import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +62,7 @@ public class UserService implements IUserRepository{
     }
 
     @Override
-    public void updateLastRequest(Date lastRequest, long userId) {
+    public void updateLastRequest(LocalDateTime lastRequest, long userId) {
         this._repository.updateLastRequest(lastRequest, userId);
     }
 

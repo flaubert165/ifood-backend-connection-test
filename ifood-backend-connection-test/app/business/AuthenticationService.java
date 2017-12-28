@@ -8,8 +8,6 @@ import domain.entities.User;
 import domain.enums.Status;
 import exceptions.AuthenticationException;
 import exceptions.UserException;
-import infrastructure.repositories.IUnavailabilityScheduleRepository;
-import infrastructure.repositories.IUserRepository;
 import presentation.MqttService;
 import infrastructure.repositories.IAuthenticationRepository;
 import play.libs.Json;
@@ -17,6 +15,11 @@ import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
 
 import java.sql.Date;
+import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZoneOffset;
 import java.util.List;
 
 public class AuthenticationService implements IAuthenticationRepository{
@@ -98,9 +101,13 @@ public class AuthenticationService implements IAuthenticationRepository{
 
             UserOutputDto user = this._userService.getUserById(id);
 
-            this.logout(user.getId(), Status.AvailableOffline);
-
-            user.setStatus(Status.AvailableOffline);
+            if(TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
+                this.logout(user.getId(), Status.AvailableOffline);
+                user.setStatus(Status.AvailableOffline);
+            }else {
+                this.logout(user.getId(), Status.UnavailableOffline);
+                user.setStatus(Status.UnavailableOffline);
+            }
 
             this._mqttService.publish("restaurants/offline/",
                 Json.stringify(Json.toJson(user)).getBytes(), 1);
@@ -124,16 +131,15 @@ public class AuthenticationService implements IAuthenticationRepository{
      * @param userId
      * @throws AuthenticationException
      */
-    public void updateOfflineTime(long userId, Date lastRequest) throws AuthenticationException{
+    public void updateOfflineTime(long userId, java.util.Date lastRequest) throws Exception{
 
-        java.util.Date now = new java.util.Date();
-        Date requestTime = new Date(now.getDate());
+        LocalDateTime now = LocalDateTime.now(ZoneOffset.UTC);;
 
         if(lastRequest == null){
-            _userService.updateLastRequest(requestTime, userId);
+            _userService.updateLastRequest(now, userId);
         }else {
-            _userService.updateLastRequest(requestTime, userId);
-            long minutes = TimeIntervalHelper.calculatesOfflineUserTime(lastRequest.toInstant());
+            _userService.updateLastRequest(now, userId);
+            long minutes = TimeIntervalHelper.calculatesOfflineUserTime(lastRequest);
             _userService.updateMinutesOffline(minutes, userId);
         }
 

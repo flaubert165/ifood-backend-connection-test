@@ -2,8 +2,7 @@ package domain.entities;
 
 import domain.Entity;
 import domain.enums.Status;
-
-import java.sql.Date;
+import java.util.Date;
 
 public class User implements Entity {
     private long id;

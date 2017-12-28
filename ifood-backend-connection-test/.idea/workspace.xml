@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/domain/entities/User.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/domain/entities/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -13,6 +14,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/UserService.java" afterPath="$PROJECT_DIR$/app/business/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/domain/entities/User.java" afterPath="$PROJECT_DIR$/app/domain/entities/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" afterPath="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" afterPath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" afterPath="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.xml" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
@@ -53,55 +55,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#publish#1;class#MqttService#0" expanded="false" />
-                <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
-                <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
-                <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="139" column="5" lean-forward="true" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+            <state relative-caret-position="130">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
-                <element signature="method#logout#1;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
-                <element signature="method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IUserRepository.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
+      <file leaf-file-name="AuthenticationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="31" column="63" lean-forward="false" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-              <folding>
-                <marker date="1514412903652" expanded="true" signature="254:272" ph="SELECT * FRO... user" />
-                <marker date="1514412903652" expanded="true" signature="254:296" ph="SELECT * FRO... user" />
-                <marker date="1514412903652" expanded="true" signature="395:440" ph="SELECT * FRO... user" />
-                <marker date="1514412903652" expanded="true" signature="530:578" ph="SELECT * FRO... user" />
-                <marker date="1514412903652" expanded="true" signature="652:707" ph="SELECT lastR... user" />
-                <marker date="1514412903652" expanded="true" signature="779:986" ph="INSERT INTO user... " />
-                <marker date="1514412903652" expanded="true" signature="1045:1101" ph="UPDATE user " />
-                <marker date="1514412903652" expanded="true" signature="1163:1247" ph="UPDATE user " />
-              </folding>
+            <state relative-caret-position="250">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,8 +84,8 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/business/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="64" column="62" lean-forward="false" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+            <state relative-caret-position="228">
+              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -119,8 +94,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/domain/entities/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="34">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding>
                 <element signature="e#1609#1610#0" expanded="true" />
                 <element signature="e#1643#1644#0" expanded="true" />
@@ -131,13 +106,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeIntervalHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TimeIntervalHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="115" column="28" lean-forward="false" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+            <state relative-caret-position="209">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
-                <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
                 <element signature="docComment;method#verifyStatus#0;class#TimeIntervalHelper#0" expanded="false" />
                 <element signature="docComment;method#toSqlTime#0;class#TimeIntervalHelper#0" expanded="false" />
                 <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
@@ -237,17 +211,17 @@
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/confections/register.unavailability.schedule.component.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.ts" />
-        <option value="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
         <option value="$PROJECT_DIR$/conf/infrastructure/repositories/IAuthenticationRepository.xml" />
         <option value="$PROJECT_DIR$/app/infrastructure/repositories/IAuthenticationRepository.java" />
         <option value="$PROJECT_DIR$/app/infrastructure/repositories/IUnavailabilityScheduleRepository.java" />
         <option value="$PROJECT_DIR$/conf/infrastructure/repositories/IUnavailabilityScheduleRepository.xml" />
         <option value="$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java" />
-        <option value="$PROJECT_DIR$/app/domain/entities/User.java" />
         <option value="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" />
-        <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/app/domain/entities/User.java" />
         <option value="$PROJECT_DIR$/app/business/UserService.java" />
         <option value="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" />
+        <option value="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
+        <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
       </list>
     </option>
   </component>
@@ -278,9 +252,10 @@
       </array>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -328,7 +303,31 @@
               <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="inputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
@@ -342,25 +341,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="infrastructure" type="462c0819:PsiDirectoryNode" />
               <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
@@ -430,13 +410,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-frontend-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -653,7 +626,7 @@
       <workItem from="1514291641667" duration="7410000" />
       <workItem from="1514299500942" duration="406000" />
       <workItem from="1514299928700" duration="24738000" />
-      <workItem from="1514382272959" duration="27008000" />
+      <workItem from="1514382272959" duration="32019000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -680,7 +653,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213900000" />
+    <option name="totallyTimeSpent" value="218911000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,7 +665,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="-1440" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -705,18 +678,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37945494" sideWeight="0.48712447" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4552239" sideWeight="0.48712447" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23165618" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23134328" sideWeight="0.48569384" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31965175" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21383648" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19456366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -791,63 +764,12 @@
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/business/AuthenticationService.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/business/AuthenticationService.java</url>
-          <line>134</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/business/AuthenticationService.java</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="142" />
+      <option name="time" value="164" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/node_modules/ng2-idle/ts/idle.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="118" column="2" lean-forward="false" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/node_modules/ng2-idle-keepalive/node_modules/@angular/http/src/static_request.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/node_modules/ng2-idle-keepalive/ts/keepalive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/node_modules/ng2-idle-keepalive/node_modules/rxjs/Subject.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1015,14 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/node_modules/@ng-idle/core/src/idle.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1089,14 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/domain/dto/inputs/UnavailabilityScheduleDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1170,14 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUnavailabilityScheduleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUnavailabilityScheduleRepository.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1192,18 +1090,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/domain/dto/outputs/UnavailabilityScheduleOutputDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="-78">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/domain/dto/inputs/UnavailabilityScheduleDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUnavailabilityScheduleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <marker date="1514425276539" expanded="true" signature="254:272" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="254:296" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="395:440" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="530:578" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="634:689" ph="SELECT lastR... user" />
+            <marker date="1514425276539" expanded="true" signature="761:968" ph="INSERT INTO user... " />
+            <marker date="1514425276539" expanded="true" signature="1027:1083" ph="UPDATE user " />
+            <marker date="1514425276539" expanded="true" signature="1145:1229" ph="UPDATE user " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="857" column="15" lean-forward="false" selection-start-line="857" selection-start-column="15" selection-end-line="857" selection-end-column="15" />
+          <folding>
+            <element signature="e#36350#36351#0" expanded="false" />
+            <element signature="e#36389#36390#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/time/ZoneOffset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="129" column="19" lean-forward="false" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/time/chrono/ChronoLocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="444" column="35" lean-forward="true" selection-start-line="444" selection-start-column="35" selection-end-line="444" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/domain/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="34">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
             <element signature="e#1609#1610#0" expanded="true" />
             <element signature="e#1643#1644#0" expanded="true" />
@@ -1213,58 +1179,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="115" column="28" lean-forward="false" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
-          <folding>
-            <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#verifyStatus#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#toSqlTime#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="252">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/business/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="64" column="62" lean-forward="false" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+        <state relative-caret-position="228">
+          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
+    <entry file="file://$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="31" column="63" lean-forward="false" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-          <folding>
-            <marker date="1514412903652" expanded="true" signature="254:272" ph="SELECT * FRO... user" />
-            <marker date="1514412903652" expanded="true" signature="254:296" ph="SELECT * FRO... user" />
-            <marker date="1514412903652" expanded="true" signature="395:440" ph="SELECT * FRO... user" />
-            <marker date="1514412903652" expanded="true" signature="530:578" ph="SELECT * FRO... user" />
-            <marker date="1514412903652" expanded="true" signature="652:707" ph="SELECT lastR... user" />
-            <marker date="1514412903652" expanded="true" signature="779:986" ph="INSERT INTO user... " />
-            <marker date="1514412903652" expanded="true" signature="1045:1101" ph="UPDATE user " />
-            <marker date="1514412903652" expanded="true" signature="1163:1247" ph="UPDATE user " />
-          </folding>
+        <state relative-caret-position="250">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="38">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#publish#1;class#MqttService#0" expanded="false" />
@@ -1277,16 +1219,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="139" column="5" lean-forward="true" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+        <state relative-caret-position="130">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
             <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#logout#1;class#AuthenticationService#0" expanded="false" />
             <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
             <element signature="docComment;method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#verifyStatus#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#toSqlTime#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
