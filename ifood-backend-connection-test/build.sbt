@@ -15,6 +15,7 @@ libraryDependencies ++= Seq(
   filters,
   "org.mybatis" % "mybatis" % "3.4.1",
   "org.mybatis" % "mybatis-guice" % "3.8",
+  "org.mybatis.caches" % "mybatis-ignite" % "1.0.6",
   "com.google.inject.extensions" % "guice-multibindings" % "4.0",
   "org.mindrot" % "jbcrypt" % "0.3m",
   "mysql" % "mysql-connector-java" % "6.0.6",

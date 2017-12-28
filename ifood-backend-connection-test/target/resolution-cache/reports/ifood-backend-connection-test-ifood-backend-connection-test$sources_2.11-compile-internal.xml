@@ -7,10 +7,10 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171219120917"/>
+		date="20171228160242"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-cache_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194024" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="85">
+			<revision name="2.5.9" status="release" pubdate="20161008194024" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="98">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3565" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-cache_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.11/2.5.9/play-cache_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -22,7 +22,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sf.ehcache" name="ehcache-core">
-			<revision name="2.6.11" status="release" pubdate="20150422141931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ehcache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+			<revision name="2.6.11" status="release" pubdate="20150422141931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ehcache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
 				<license name="The Apache Software License, Version 2.0" url="src/assemble/EHCACHE-CORE-LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="8541" time="0" location="/Users/italosantana/.ivy2/cache/net.sf.ehcache/ehcache-core/ivy-2.6.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.6.11" rev-constraint-default="2.6.11" rev-constraint-dynamic="2.6.11" callerrev="1.0"/>
@@ -34,19 +34,19 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="filters-helpers_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194036" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
+			<revision name="2.5.9" status="release" pubdate="20161008194036" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3217" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.9/filters-helpers_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="filters-helpers_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38252" time="705" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/srcs/filters-helpers_2.11-2.5.9-sources.jar">
+					<artifact name="filters-helpers_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38252" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/srcs/filters-helpers_2.11-2.5.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.5.9/filters-helpers_2.11-2.5.9-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.mindrot" name="jbcrypt">
-			<revision name="0.3m" status="release" pubdate="20100516234639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mindrot.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
+			<revision name="0.3m" status="release" pubdate="20100516234639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mindrot.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="70">
 				<license name="ISC/BSD License"/>
 				<metadata-artifact status="no" details="" size="2822" time="0" location="/Users/italosantana/.ivy2/cache/org.mindrot/jbcrypt/ivy-0.3m.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.3m" rev-constraint-default="0.3m" rev-constraint-dynamic="0.3m" callerrev="1.0"/>
@@ -58,7 +58,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java-ws_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194106" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+			<revision name="2.5.9" status="release" pubdate="20161008194106" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="62">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4444" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-ws_2.11/2.5.9/play-java-ws_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -70,7 +70,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-ws_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194032" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+			<revision name="2.5.9" status="release" pubdate="20161008194032" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4260" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-ws_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws_2.11/2.5.9/play-ws_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -82,7 +82,7 @@
 			</revision>
 		</module>
 		<module organisation="oauth.signpost" name="signpost-commonshttp4">
-			<revision name="1.2.1.2" status="release" pubdate="20120226051621" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="100">
+			<revision name="1.2.1.2" status="release" pubdate="20120226051621" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
 				<metadata-artifact status="no" details="" size="3798" time="0" location="/Users/italosantana/.ivy2/cache/oauth.signpost/signpost-commonshttp4/ivy-1.2.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/oauth/signpost/signpost-commonshttp4/1.2.1.2/signpost-commonshttp4-1.2.1.2.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.2.1.2" rev-constraint-default="1.2.1.2" rev-constraint-dynamic="1.2.1.2" callerrev="1.0"/>
 				<artifacts>
@@ -93,7 +93,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
-			<revision name="4.0.1" status="release" pubdate="20091209162018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="65">
+			<revision name="4.0.1" status="release" pubdate="20091209162018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="77">
 				<license name="Apache License" url="../LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="5028" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.0"/>
@@ -104,19 +104,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="commons-logging" name="commons-logging">
-			<revision name="1.1.1" status="release" pubdate="20071126172410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="58">
-				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/italosantana/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
-				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74976" time="0" location="/Users/italosantana/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.1-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
-			<revision name="4.0.1" status="release" pubdate="20090621080836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="69">
+			<revision name="4.0.1" status="release" pubdate="20090621080836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="82">
 				<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4328" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.0"/>
@@ -128,7 +117,7 @@
 			</revision>
 		</module>
 		<module organisation="mysql" name="mysql-connector-java">
-			<revision name="6.0.6" status="release" pubdate="20170222224457" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+			<revision name="6.0.6" status="release" pubdate="20170222224457" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
 				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2411" time="0" location="/Users/italosantana/.ivy2/cache/mysql/mysql-connector-java/ivy-6.0.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/mysql/mysql-connector-java/6.0.6/mysql-connector-java-6.0.6.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="6.0.6" rev-constraint-default="6.0.6" rev-constraint-dynamic="6.0.6" callerrev="1.0"/>
@@ -140,7 +129,7 @@
 			</revision>
 		</module>
 		<module organisation="org.mybatis" name="mybatis-guice">
-			<revision name="3.8" status="release" pubdate="20160825100123" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mybatis.github.io/guice/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="42">
+			<revision name="3.8" status="release" pubdate="20160825100123" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mybatis.github.io/guice/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
 				<metadata-artifact status="no" details="" size="7200" time="0" location="/Users/italosantana/.ivy2/cache/org.mybatis/mybatis-guice/ivy-3.8.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mybatis/mybatis-guice/3.8/mybatis-guice-3.8.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="3.8" rev-constraint-default="3.8" rev-constraint-dynamic="3.8" callerrev="1.0"/>
 				<artifacts>
@@ -151,7 +140,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.11.11" status="release" pubdate="20170413165043" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+			<revision name="2.11.11" status="release" pubdate="20170413165043" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/italosantana/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/"/>
@@ -163,7 +152,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.11.11" status="release" pubdate="20170413165031" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="64">
+			<revision name="2.11.11" status="release" pubdate="20170413165031" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="76">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/italosantana/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/"/>
@@ -175,7 +164,7 @@
 			</revision>
 		</module>
 		<module organisation="oauth.signpost" name="signpost-core">
-			<revision name="1.2.1.2" status="release" pubdate="20120226051606" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+			<revision name="1.2.1.2" status="release" pubdate="20120226051606" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
 				<metadata-artifact status="no" details="" size="3140" time="0" location="/Users/italosantana/.ivy2/cache/oauth.signpost/signpost-core/ivy-1.2.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.2.1.2" rev-constraint-default="1.2.1.2" rev-constraint-dynamic="1.2.1.2" callerrev="1.0"/>
 				<artifacts>
@@ -186,7 +175,7 @@
 			</revision>
 		</module>
 		<module organisation="com.baidu.unbiz" name="fluent-validator">
-			<revision name="1.0.5" status="release" pubdate="20160208114548" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+			<revision name="1.0.5" status="release" pubdate="20160208114548" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="36">
 				<metadata-artifact status="no" details="" size="14384" time="0" location="/Users/italosantana/.ivy2/cache/com.baidu.unbiz/fluent-validator/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/baidu/unbiz/fluent-validator/1.0.5/fluent-validator-1.0.5.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.0"/>
 				<artifacts>
@@ -197,7 +186,7 @@
 			</revision>
 		</module>
 		<module organisation="org.asynchttpclient" name="async-http-client">
-			<revision name="2.0.11" status="release" pubdate="20160721131038" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+			<revision name="2.0.11" status="release" pubdate="20160721131038" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
 				<metadata-artifact status="no" details="" size="9301" time="0" location="/Users/italosantana/.ivy2/cache/org.asynchttpclient/async-http-client/ivy-2.0.11.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/asynchttpclient/async-http-client/2.0.11/async-http-client-2.0.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.0.11" rev-constraint-default="2.0.11" rev-constraint-dynamic="2.0.11" callerrev="1.0"/>
 				<artifacts>
@@ -208,7 +197,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.inject.extensions" name="guice-multibindings">
-			<revision name="4.0" status="release" pubdate="20150428173539" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+			<revision name="4.0" status="release" pubdate="20150428173539" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
 				<metadata-artifact status="no" details="" size="4946" time="0" location="/Users/italosantana/.ivy2/cache/com.google.inject.extensions/guice-multibindings/ivy-4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-multibindings/4.0/guice-multibindings-4.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0" rev-constraint-default="4.0" rev-constraint-dynamic="4.0" callerrev="1.0"/>
 				<artifacts>
@@ -219,7 +208,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java-jdbc_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193953" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="23">
+			<revision name="2.5.9" status="release" pubdate="20161008193953" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3220" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.11/2.5.9/play-java-jdbc_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -231,7 +220,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-jdbc_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194045" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+			<revision name="2.5.9" status="release" pubdate="20161008194045" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4245" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.5.9/play-jdbc_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -243,7 +232,7 @@
 			</revision>
 		</module>
 		<module organisation="com.googlecode.usc" name="jdbcdslog">
-			<revision name="1.0.6.2" status="release" pubdate="20111225034305" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/jdbcdslog-exp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+			<revision name="1.0.6.2" status="release" pubdate="20111225034305" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/jdbcdslog-exp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
 				<license name="Apache License,Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3895" time="0" location="/Users/italosantana/.ivy2/cache/com.googlecode.usc/jdbcdslog/ivy-1.0.6.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.6.2" rev-constraint-default="1.0.6.2" rev-constraint-dynamic="1.0.6.2" callerrev="1.0"/>
@@ -255,7 +244,7 @@
 			</revision>
 		</module>
 		<module organisation="com.zaxxer" name="HikariCP">
-			<revision name="2.5.1" status="release" pubdate="20160919084722" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
+			<revision name="2.5.1" status="release" pubdate="20160919084722" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7169" time="0" location="/Users/italosantana/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.5.1/HikariCP-2.5.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="1.0"/>
@@ -266,20 +255,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="com.h2database" name="h2">
-			<revision name="1.4.192" status="release" pubdate="20160526042838" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
-				<license name="MPL 2.0 or EPL 1.0" url="http://h2database.com/html/license.html"/>
-				<metadata-artifact status="no" details="" size="2328" time="0" location="/Users/italosantana/.ivy2/cache/com.h2database/h2/ivy-1.4.192.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192.pom"/>
-				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.4.192" rev-constraint-default="1.4.192" rev-constraint-dynamic="1.4.192" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="h2" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1243347" time="0" location="/Users/italosantana/.ivy2/cache/com.h2database/h2/srcs/h2-1.4.192-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/h2database/h2/1.4.192/h2-1.4.192-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="com.jolbox" name="bonecp">
-			<revision name="0.8.0.RELEASE" status="release" pubdate="20131023084844" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+			<revision name="0.8.0.RELEASE" status="release" pubdate="20131023084844" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
 				<metadata-artifact status="no" details="" size="9258" time="0" location="/Users/italosantana/.ivy2/cache/com.jolbox/bonecp/ivy-0.8.0.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.8.0.RELEASE" rev-constraint-default="0.8.0.RELEASE" rev-constraint-dynamic="0.8.0.RELEASE" callerrev="1.0"/>
 				<artifacts>
@@ -290,7 +267,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-jdbc-api_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193857" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+			<revision name="2.5.9" status="release" pubdate="20161008193857" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2807" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.11/2.5.9/play-jdbc-api_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -302,7 +279,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194117" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="21">
+			<revision name="2.5.9" status="release" pubdate="20161008194117" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="25">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="6874" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-java_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.5.9/play-java_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -314,7 +291,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.tomcat" name="tomcat-servlet-api">
-			<revision name="8.0.33" status="release" pubdate="20160318174342" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tomcat.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+			<revision name="8.0.33" status="release" pubdate="20160318174342" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tomcat.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
 				<license name="         Apache License, Version 2.0 and         Common Development And Distribution License (CDDL) Version 1.0       " url="         http://www.apache.org/licenses/LICENSE-2.0.txt and         http://www.opensource.org/licenses/cddl1.txt       "/>
 				<metadata-artifact status="no" details="" size="2545" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/ivy-8.0.33.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/tomcat/tomcat-servlet-api/8.0.33/tomcat-servlet-api-8.0.33.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="8.0.33" rev-constraint-default="8.0.33" rev-constraint-dynamic="8.0.33" callerrev="1.0"/>
@@ -326,7 +303,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="3.0.1" status="release" pubdate="20151009020635" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+			<revision name="3.0.1" status="release" pubdate="20151009020635" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3142" time="0" location="/Users/italosantana/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="1.0"/>
@@ -338,7 +315,7 @@
 			</revision>
 		</module>
 		<module organisation="net.jodah" name="typetools">
-			<revision name="0.4.4" status="release" pubdate="20151028164345" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jhalterman/typetools/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+			<revision name="0.4.4" status="release" pubdate="20151028164345" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/jhalterman/typetools/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
 				<license name="Apache License, Version 2.0" url="http://apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3142" time="0" location="/Users/italosantana/.ivy2/cache/net.jodah/typetools/ivy-0.4.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/jodah/typetools/0.4.4/typetools-0.4.4.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.4.4" rev-constraint-default="0.4.4" rev-constraint-dynamic="0.4.4" callerrev="1.0"/>
@@ -350,7 +327,7 @@
 			</revision>
 		</module>
 		<module organisation="org.reflections" name="reflections">
-			<revision name="0.9.10" status="release" pubdate="20150516064630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ronmamo/reflections" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+			<revision name="0.9.10" status="release" pubdate="20150516064630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ronmamo/reflections" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
 				<license name="WTFPL" url="http://www.wtfpl.net/"/>
 				<license name="The New BSD License" url="http://www.opensource.org/licenses/bsd-license.html"/>
 				<metadata-artifact status="no" details="" size="4062" time="0" location="/Users/italosantana/.ivy2/cache/org.reflections/reflections/ivy-0.9.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10.pom"/>
@@ -362,20 +339,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.springframework" name="spring-context">
-			<revision name="4.2.7.RELEASE" status="release" pubdate="20160704075115" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="4644" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-context/ivy-4.2.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/springframework/spring-context/4.2.7.RELEASE/spring-context-4.2.7.RELEASE.pom"/>
-				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.2.7.RELEASE" rev-constraint-default="4.2.7.RELEASE" rev-constraint-dynamic="4.2.7.RELEASE" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="spring-context" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1098889" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-context/srcs/spring-context-4.2.7.RELEASE-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/springframework/spring-context/4.2.7.RELEASE/spring-context-4.2.7.RELEASE-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="javax.el" name="javax.el-api">
-			<revision name="3.0.0" status="release" pubdate="20130425195245" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://uel-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+			<revision name="3.0.0" status="release" pubdate="20130425195245" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://uel-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
 				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
 				<metadata-artifact status="no" details="" size="3626" time="0" location="/Users/italosantana/.ivy2/cache/javax.el/javax.el-api/ivy-3.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="1.0"/>
@@ -387,7 +352,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-validator">
-			<revision name="5.2.4.Final" status="release" pubdate="20160217121525" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="89">
+			<revision name="5.2.4.Final" status="release" pubdate="20160217121525" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="103">
 				<metadata-artifact status="no" details="" size="30116" time="0" location="/Users/italosantana/.ivy2/cache/org.hibernate/hibernate-validator/ivy-5.2.4.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="5.2.4.Final" rev-constraint-default="5.2.4.Final" rev-constraint-dynamic="5.2.4.Final" callerrev="1.0"/>
 				<artifacts>
@@ -398,7 +363,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml" name="classmate">
-			<revision name="1.1.0" status="release" pubdate="20140819212148" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/cowtowncoder/java-classmate" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="39">
+			<revision name="1.1.0" status="release" pubdate="20140819212148" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/cowtowncoder/java-classmate" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="45">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3253" time="0" location="/Users/italosantana/.ivy2/cache/com.fasterxml/classmate/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/classmate/1.1.0/classmate-1.1.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
@@ -410,7 +375,7 @@
 			</revision>
 		</module>
 		<module organisation="org.jboss.logging" name="jboss-logging">
-			<revision name="3.2.1.Final" status="release" pubdate="20150120132222" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="77">
+			<revision name="3.2.1.Final" status="release" pubdate="20150120132222" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="90">
 				<license name="Apache License, version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="9336" time="0" location="/Users/italosantana/.ivy2/cache/org.jboss.logging/jboss-logging/ivy-3.2.1.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="3.2.1.Final" rev-constraint-default="3.2.1.Final" rev-constraint-dynamic="3.2.1.Final" callerrev="1.0"/>
@@ -422,7 +387,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.validation" name="validation-api">
-			<revision name="1.1.0.Final" status="release" pubdate="20130410100303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://beanvalidation.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="74">
+			<revision name="1.1.0.Final" status="release" pubdate="20130410100303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://beanvalidation.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="88">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3068" time="0" location="/Users/italosantana/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="1.0"/>
@@ -434,7 +399,7 @@
 			</revision>
 		</module>
 		<module organisation="org.yaml" name="snakeyaml">
-			<revision name="1.16" status="release" pubdate="20150818170808" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+			<revision name="1.16" status="release" pubdate="20150818170808" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="99">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3550" time="0" location="/Users/italosantana/.ivy2/cache/org.yaml/snakeyaml/ivy-1.16.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.16/snakeyaml-1.16.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.16" rev-constraint-default="1.16" rev-constraint-dynamic="1.16" callerrev="1.0"/>
@@ -446,7 +411,7 @@
 			</revision>
 		</module>
 		<module organisation="org.asynchttpclient" name="netty-resolver-dns">
-			<revision name="2.0.11" status="release" pubdate="20160721131018" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+			<revision name="2.0.11" status="release" pubdate="20160721131018" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="23">
 				<metadata-artifact status="no" details="" size="9735" time="0" location="/Users/italosantana/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/ivy-2.0.11.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver-dns/2.0.11/netty-resolver-dns-2.0.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.0.11" rev-constraint-default="2.0.11" rev-constraint-dynamic="2.0.11" callerrev="1.0"/>
 				<artifacts>
@@ -457,7 +422,7 @@
 			</revision>
 		</module>
 		<module organisation="org.asynchttpclient" name="netty-codec-dns">
-			<revision name="2.0.11" status="release" pubdate="20160721130952" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="96">
+			<revision name="2.0.11" status="release" pubdate="20160721130952" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="110">
 				<metadata-artifact status="no" details="" size="9430" time="0" location="/Users/italosantana/.ivy2/cache/org.asynchttpclient/netty-codec-dns/ivy-2.0.11.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/asynchttpclient/netty-codec-dns/2.0.11/netty-codec-dns-2.0.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.0.11" rev-constraint-default="2.0.11" rev-constraint-dynamic="2.0.11" callerrev="1.0"/>
 				<artifacts>
@@ -468,7 +433,7 @@
 			</revision>
 		</module>
 		<module organisation="org.asynchttpclient" name="netty-resolver">
-			<revision name="2.0.11" status="release" pubdate="20160721131005" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="41">
+			<revision name="2.0.11" status="release" pubdate="20160721131005" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="48">
 				<metadata-artifact status="no" details="" size="9429" time="0" location="/Users/italosantana/.ivy2/cache/org.asynchttpclient/netty-resolver/ivy-2.0.11.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/asynchttpclient/netty-resolver/2.0.11/netty-resolver-2.0.11.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.0.11" rev-constraint-default="2.0.11" rev-constraint-dynamic="2.0.11" callerrev="1.0"/>
 				<artifacts>
@@ -479,7 +444,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-logback_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193902" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+			<revision name="2.5.9" status="release" pubdate="20161008193902" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2952" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-logback_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.11/2.5.9/play-logback_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -490,32 +455,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.springframework" name="spring-beans">
-			<revision name="4.2.7.RELEASE" status="release" pubdate="20160704075126" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3053" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-beans/ivy-4.2.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/springframework/spring-beans/4.2.7.RELEASE/spring-beans-4.2.7.RELEASE.pom"/>
-				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.2.7.RELEASE" rev-constraint-default="4.2.7.RELEASE" rev-constraint-dynamic="4.2.7.RELEASE" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="spring-beans" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="699228" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-beans/srcs/spring-beans-4.2.7.RELEASE-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/springframework/spring-beans/4.2.7.RELEASE/spring-beans-4.2.7.RELEASE-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.springframework" name="spring-core">
-			<revision name="4.2.7.RELEASE" status="release" pubdate="20160704075117" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3042" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-core/ivy-4.2.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/springframework/spring-core/4.2.7.RELEASE/spring-core-4.2.7.RELEASE.pom"/>
-				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.2.7.RELEASE" rev-constraint-default="4.2.7.RELEASE" rev-constraint-dynamic="4.2.7.RELEASE" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="711218" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-core/srcs/spring-core-4.2.7.RELEASE-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/springframework/spring-core/4.2.7.RELEASE/spring-core-4.2.7.RELEASE-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="io.reactivex.rxjava2" name="rxjava">
-			<revision name="2.1.0" status="release" pubdate="20170429044657" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/ReactiveX/RxJava" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+			<revision name="2.1.0" status="release" pubdate="20170429044657" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/ReactiveX/RxJava" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4451" time="0" location="/Users/italosantana/.ivy2/cache/io.reactivex.rxjava2/rxjava/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/reactivex/rxjava2/rxjava/2.1.0/rxjava-2.1.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0"/>
@@ -526,8 +467,139 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.mybatis.caches" name="mybatis-ignite">
+			<revision name="1.0.6" status="release" pubdate="20170821114250" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/mybatis/ignite-cache" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6150" time="0" location="/Users/italosantana/.ivy2/cache/org.mybatis.caches/mybatis-ignite/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mybatis/caches/mybatis-ignite/1.0.6/mybatis-ignite-1.0.6.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="mybatis-ignite" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10716" time="817" location="/Users/italosantana/.ivy2/cache/org.mybatis.caches/mybatis-ignite/srcs/mybatis-ignite-1.0.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mybatis/caches/mybatis-ignite/1.0.6/mybatis-ignite-1.0.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ignite" name="ignite-spring">
+			<revision name="2.1.0" status="release" pubdate="20170720143654" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ignite.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4243" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.ignite/ignite-spring/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ignite/ignite-spring/2.1.0/ignite-spring-2.1.0.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ignite-spring" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="35981" time="684" location="/Users/italosantana/.ivy2/cache/org.apache.ignite/ignite-spring/srcs/ignite-spring-2.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ignite/ignite-spring/2.1.0/ignite-spring-2.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071126172410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/italosantana/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74976" time="0" location="/Users/italosantana/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-jdbc">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070519" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3918" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-jdbc/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-jdbc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="448162" time="704" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-jdbc/srcs/spring-jdbc-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ignite" name="ignite-indexing">
+			<revision name="2.1.0" status="release" pubdate="20170720143609" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ignite.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3581" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.ignite/ignite-indexing/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ignite/ignite-indexing/2.1.0/ignite-indexing-2.1.0.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ignite-indexing" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="344196" time="743" location="/Users/italosantana/.ivy2/cache/org.apache.ignite/ignite-indexing/srcs/ignite-indexing-2.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ignite/ignite-indexing/2.1.0/ignite-indexing-2.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.4.195" status="release" pubdate="20170423094830" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="MPL 2.0 or EPL 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2454" time="0" location="/Users/italosantana/.ivy2/cache/com.h2database/h2/ivy-1.4.195.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.195/h2-1.4.195.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.4.195" rev-constraint-default="1.4.195" rev-constraint-dynamic="1.4.195" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="h2" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1272773" time="888" location="/Users/italosantana/.ivy2/cache/com.h2database/h2/srcs/h2-1.4.195-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.195/h2-1.4.195-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="5.5.2" status="release" pubdate="20160624152255" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="116">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="458326" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-5.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.5.2/lucene-analyzers-common-5.5.2.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="5.5.2" rev-constraint-default="5.5.2" rev-constraint-dynamic="5.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1539296" time="920" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/srcs/lucene-analyzers-common-5.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.5.2/lucene-analyzers-common-5.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ignite" name="ignite-core">
+			<revision name="2.1.0" status="release" pubdate="20170720143501" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ignite.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3110" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.ignite/ignite-core/ivy-2.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ignite/ignite-core/2.1.0/ignite-core-2.1.0.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.1.0" rev-constraint-default="2.1.0" rev-constraint-dynamic="2.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ignite-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6253642" time="1793" location="/Users/italosantana/.ivy2/cache/org.apache.ignite/ignite-core/srcs/ignite-core-2.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ignite/ignite-core/2.1.0/ignite-core-2.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.gridgain" name="ignite-shmem">
+			<revision name="1.0.0" status="release" pubdate="20150313192848" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.gridgain.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="100">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2523" time="0" location="/Users/italosantana/.ivy2/cache/org.gridgain/ignite-shmem/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/gridgain/ignite-shmem/1.0.0/ignite-shmem-1.0.0.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ignite-shmem" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="423555" time="1052" location="/Users/italosantana/.ivy2/cache/org.gridgain/ignite-shmem/srcs/ignite-shmem-1.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/gridgain/ignite-shmem/1.0.0/ignite-shmem-1.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jetbrains" name="annotations">
+			<revision name="13.0" status="release" pubdate="20131217091043" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jetbrains.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2908" time="0" location="/Users/italosantana/.ivy2/cache/org.jetbrains/annotations/ivy-13.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="13.0" rev-constraint-default="13.0" rev-constraint-dynamic="13.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17566" time="680" location="/Users/italosantana/.ivy2/cache/org.jetbrains/annotations/srcs/annotations-13.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.cache" name="cache-api">
+			<revision name="1.0.0" status="release" pubdate="20140328003442" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jsr107/jsr107spec" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+				<license name="JSR-000107 JCACHE 2.9 Public Review - Updated Specification                 License             " url="https://raw.github.com/jsr107/jsr107spec/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4067" time="0" location="/Users/italosantana/.ivy2/cache/javax.cache/cache-api/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/cache/cache-api/1.0.0/cache-api-1.0.0.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cache-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="84172" time="0" location="/Users/italosantana/.ivy2/cache/javax.cache/cache-api/srcs/cache-api-1.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/cache/cache-api/1.0.0/cache-api-1.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.eclipse.paho" name="org.eclipse.paho.client.mqttv3">
-			<revision name="1.1.0" status="release" pubdate="20160618122552" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+			<revision name="1.1.0" status="release" pubdate="20160618122552" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<metadata-artifact status="no" details="" size="3628" time="0" location="/Users/italosantana/.ivy2/cache/org.eclipse.paho/org.eclipse.paho.client.mqttv3/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.1.0/org.eclipse.paho.client.mqttv3-1.1.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
 				<artifacts>
@@ -538,7 +610,7 @@
 			</revision>
 		</module>
 		<module organisation="io.jsonwebtoken" name="jjwt">
-			<revision name="0.5" status="release" pubdate="20150512232203" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+			<revision name="0.5" status="release" pubdate="20150512232203" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="5773" time="0" location="/Users/italosantana/.ivy2/cache/io.jsonwebtoken/jjwt/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.5/jjwt-0.5.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="1.0"/>
@@ -549,8 +621,56 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.springframework" name="spring-tx">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070519" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3658" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-tx/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-tx" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="313635" time="757" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-tx/srcs/spring-tx-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-context">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070415" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4874" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-context/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-context" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1136294" time="897" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-context/srcs/spring-context-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-aop">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070455" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="97">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3369" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-aop/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-aop" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="378069" time="710" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-aop/srcs/spring-aop-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-beans">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070511" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3209" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-beans/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-beans" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="726618" time="766" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-beans/srcs/spring-beans-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.play" name="play-netty-server_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193933" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+			<revision name="2.5.9" status="release" pubdate="20161008193933" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3767" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-server_2.11/2.5.9/play-netty-server_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -562,7 +682,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-transport-native-epoll">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829142626" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829142626" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
 				<metadata-artifact status="no" details="" size="17994" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-transport-native-epoll/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.0.41.Final/netty-transport-native-epoll-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
@@ -573,7 +693,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.netty" name="netty-reactive-streams-http">
-			<revision name="1.0.8" status="release" pubdate="20160912050045" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+			<revision name="1.0.8" status="release" pubdate="20160912050045" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
 				<metadata-artifact status="no" details="" size="5332" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/ivy-1.0.8.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams-http/1.0.8/netty-reactive-streams-http-1.0.8.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.8" rev-constraint-default="1.0.8" rev-constraint-dynamic="1.0.8" callerrev="1.0"/>
 				<artifacts>
@@ -584,7 +704,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-codec-http">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829135921" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829135921" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
 				<metadata-artifact status="no" details="" size="17296" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-codec-http/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-codec-http/4.0.41.Final/netty-codec-http-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
@@ -595,7 +715,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-server_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193929" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="16">
+			<revision name="2.5.9" status="release" pubdate="20161008193929" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="20">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3564" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-server_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.11/2.5.9/play-server_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -607,7 +727,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008194102" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+			<revision name="2.5.9" status="release" pubdate="20161008194102" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="8190" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.11/2.5.9/play_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -619,7 +739,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.guava" name="guava">
-			<revision name="19.0" status="release" pubdate="20151209175835" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+			<revision name="19.0" status="release" pubdate="20151209175835" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
 				<metadata-artifact status="no" details="" size="6771" time="0" location="/Users/italosantana/.ivy2/cache/com.google.guava/guava/ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="1.0"/>
 				<artifacts>
@@ -630,7 +750,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.inject.extensions" name="guice-assistedinject">
-			<revision name="4.0" status="release" pubdate="20150428173500" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+			<revision name="4.0" status="release" pubdate="20150428173500" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
 				<metadata-artifact status="no" details="" size="4948" time="0" location="/Users/italosantana/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/ivy-4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0" rev-constraint-default="4.0" rev-constraint-dynamic="4.0" callerrev="1.0"/>
 				<artifacts>
@@ -641,7 +761,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.inject" name="guice">
-			<revision name="4.0" status="release" pubdate="20150428173326" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+			<revision name="4.0" status="release" pubdate="20150428173326" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
 				<metadata-artifact status="no" details="" size="5694" time="0" location="/Users/italosantana/.ivy2/cache/com.google.inject/guice/ivy-4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/inject/guice/4.0/guice-4.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0" rev-constraint-default="4.0" rev-constraint-dynamic="4.0" callerrev="1.0"/>
 				<artifacts>
@@ -652,7 +772,7 @@
 			</revision>
 		</module>
 		<module organisation="aopalliance" name="aopalliance">
-			<revision name="1.0" status="release" pubdate="20070226194340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="81">
+			<revision name="1.0" status="release" pubdate="20070226194340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="93">
 				<license name="Public Domain"/>
 				<metadata-artifact status="no" details="" size="2291" time="0" location="/Users/italosantana/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
@@ -664,7 +784,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.inject" name="javax.inject">
-			<revision name="1" status="release" pubdate="20091013203500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="94">
+			<revision name="1" status="release" pubdate="20091013203500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="108">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2380" time="0" location="/Users/italosantana/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
@@ -676,7 +796,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.transaction" name="jta">
-			<revision name="1.1" status="release" pubdate="20081027222721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/jta" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+			<revision name="1.1" status="release" pubdate="20081027222721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/jta" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="87">
 				<metadata-artifact status="no" details="" size="2353" time="0" location="/Users/italosantana/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0"/>
 				<artifacts>
@@ -687,7 +807,7 @@
 			</revision>
 		</module>
 		<module organisation="xerces" name="xercesImpl">
-			<revision name="2.11.0" status="release" pubdate="20130220172006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://xerces.apache.org/xerces2-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+			<revision name="2.11.0" status="release" pubdate="20130220172006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://xerces.apache.org/xerces2-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4260" time="0" location="/Users/italosantana/.ivy2/cache/xerces/xercesImpl/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0"/>
@@ -699,7 +819,7 @@
 			</revision>
 		</module>
 		<module organisation="xml-apis" name="xml-apis">
-			<revision name="1.4.01" status="release" pubdate="20110819211111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="84">
+			<revision name="1.4.01" status="release" pubdate="20110819211111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="96">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<license name="The SAX License" url="http://www.saxproject.org/copying.html"/>
 				<license name="The W3C License" url="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip"/>
@@ -712,19 +832,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="commons-codec" name="commons-codec">
-			<revision name="1.10" status="release" pubdate="20141106111535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
-				<metadata-artifact status="no" details="" size="10374" time="0" location="/Users/italosantana/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
-				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="/Users/italosantana/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="com.typesafe.akka" name="akka-slf4j_2.11">
-			<revision name="2.4.10" status="release" pubdate="20160907041401" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+			<revision name="2.4.10" status="release" pubdate="20160907041401" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3202" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/ivy-2.4.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.4.10/akka-slf4j_2.11-2.4.10.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.4.10" rev-constraint-default="2.4.10" rev-constraint-dynamic="2.4.10" callerrev="1.0"/>
@@ -736,7 +845,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="twirl-api_2.11">
-			<revision name="1.1.1" status="release" pubdate="20150514020045" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="26">
+			<revision name="1.1.1" status="release" pubdate="20150514020045" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="32">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3288" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/twirl-api_2.11/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.11/1.1.1/twirl-api_2.11-1.1.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
@@ -748,7 +857,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
-			<revision name="1.0.1" status="release" pubdate="20140416062108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="37">
+			<revision name="1.0.1" status="release" pubdate="20140416062108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="43">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="2987" time="0" location="/Users/italosantana/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0"/>
@@ -760,7 +869,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-streams_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193750" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+			<revision name="2.5.9" status="release" pubdate="20161008193750" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4244" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-streams_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.11/2.5.9/play-streams_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -772,7 +881,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-stream_2.11">
-			<revision name="2.4.10" status="release" pubdate="20160907041209" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="97">
+			<revision name="2.4.10" status="release" pubdate="20160907041209" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3361" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/ivy-2.4.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.4.10/akka-stream_2.11-2.4.10.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.4.10" rev-constraint-default="2.4.10" rev-constraint-dynamic="2.4.10" callerrev="1.0"/>
@@ -784,7 +893,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="ssl-config-akka_2.11">
-			<revision name="0.2.1" status="release" pubdate="20160408093502" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+			<revision name="0.2.1" status="release" pubdate="20160408093502" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3000" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe/ssl-config-akka_2.11/ivy-0.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-akka_2.11/0.2.1/ssl-config-akka_2.11-0.2.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="1.0"/>
@@ -796,7 +905,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="ssl-config-core_2.11">
-			<revision name="0.2.1" status="release" pubdate="20160408093507" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+			<revision name="0.2.1" status="release" pubdate="20160408093507" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2857" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe/ssl-config-core_2.11/ivy-0.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.11/0.2.1/ssl-config-core_2.11-0.2.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="1.0"/>
@@ -808,7 +917,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
-			<revision name="1.0.4" status="release" pubdate="20150430110747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+			<revision name="1.0.4" status="release" pubdate="20150430110747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="2785" time="0" location="/Users/italosantana/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="1.0"/>
@@ -820,7 +929,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
-			<revision name="2.4.10" status="release" pubdate="20160907041020" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
+			<revision name="2.4.10" status="release" pubdate="20160907041020" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2957" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.4.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4.10/akka-actor_2.11-2.4.10.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.4.10" rev-constraint-default="2.4.10" rev-constraint-dynamic="2.4.10" callerrev="1.0"/>
@@ -832,7 +941,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.11">
-			<revision name="0.7.0" status="release" pubdate="20150831080233" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+			<revision name="0.7.0" status="release" pubdate="20150831080233" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="2886" time="0" location="/Users/italosantana/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="1.0"/>
@@ -844,7 +953,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-lang3">
-			<revision name="3.4" status="release" pubdate="20150403093112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+			<revision name="3.4" status="release" pubdate="20150403093112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
 				<metadata-artifact status="no" details="" size="11421" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="3.4" rev-constraint-default="3.4" rev-constraint-dynamic="3.4" callerrev="1.0"/>
 				<artifacts>
@@ -855,7 +964,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-netty-utils">
-			<revision name="2.5.9" status="release" pubdate="20161008193544" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+			<revision name="2.5.9" status="release" pubdate="20161008193544" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2936" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-netty-utils/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.5.9/play-netty-utils-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -867,7 +976,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jcl-over-slf4j">
-			<revision name="1.7.21" status="release" pubdate="20160404153836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+			<revision name="1.7.21" status="release" pubdate="20160404153836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
 				<metadata-artifact status="no" details="" size="5351" time="0" location="/Users/italosantana/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.0"/>
 				<artifacts>
@@ -878,7 +987,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jul-to-slf4j">
-			<revision name="1.7.21" status="release" pubdate="20160404153912" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+			<revision name="1.7.21" status="release" pubdate="20160404153912" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
 				<metadata-artifact status="no" details="" size="5336" time="0" location="/Users/italosantana/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.0"/>
 				<artifacts>
@@ -889,7 +998,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-json_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193806" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+			<revision name="2.5.9" status="release" pubdate="20161008193806" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4857" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.5.9/play-json_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -901,7 +1010,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
-			<revision name="2.7.6" status="release" pubdate="20160723002950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleJSR310" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+			<revision name="2.7.6" status="release" pubdate="20160723002950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleJSR310" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7775" time="0" location="/Users/italosantana/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.7.6/jackson-datatype-jsr310-2.7.6.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="1.0"/>
@@ -913,7 +1022,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
-			<revision name="2.7.6" status="release" pubdate="20160723001522" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+			<revision name="2.7.6" status="release" pubdate="20160723001522" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7441" time="0" location="/Users/italosantana/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.7.6/jackson-datatype-jdk8-2.7.6.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="1.0"/>
@@ -925,7 +1034,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
-			<revision name="2.7.6" status="release" pubdate="20160722233809" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+			<revision name="2.7.6" status="release" pubdate="20160722233809" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7829" time="0" location="/Users/italosantana/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.7.6/jackson-databind-2.7.6.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="1.0"/>
@@ -937,7 +1046,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
-			<revision name="2.7.6" status="release" pubdate="20160722232910" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+			<revision name="2.7.6" status="release" pubdate="20160722232910" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7210" time="0" location="/Users/italosantana/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.6/jackson-core-2.7.6.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="1.0"/>
@@ -949,7 +1058,7 @@
 			</revision>
 		</module>
 		<module organisation="org.joda" name="joda-convert">
-			<revision name="1.8.1" status="release" pubdate="20151002075804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+			<revision name="1.8.1" status="release" pubdate="20151002075804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6296" time="0" location="/Users/italosantana/.ivy2/cache/org.joda/joda-convert/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/joda/joda-convert/1.8.1/joda-convert-1.8.1.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="1.0"/>
@@ -961,7 +1070,7 @@
 			</revision>
 		</module>
 		<module organisation="joda-time" name="joda-time">
-			<revision name="2.9.4" status="release" pubdate="20160527062535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+			<revision name="2.9.4" status="release" pubdate="20160527062535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6595" time="0" location="/Users/italosantana/.ivy2/cache/joda-time/joda-time/ivy-2.9.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.9.4" rev-constraint-default="2.9.4" rev-constraint-dynamic="2.9.4" callerrev="1.0"/>
@@ -973,7 +1082,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-datacommons_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193714" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+			<revision name="2.5.9" status="release" pubdate="20161008193714" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2671" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.5.9/play-datacommons_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -985,7 +1094,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-functional_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193744" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="91">
+			<revision name="2.5.9" status="release" pubdate="20161008193744" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2668" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.5.9/play-functional_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -997,7 +1106,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-iteratees_2.11">
-			<revision name="2.5.9" status="release" pubdate="20161008193754" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+			<revision name="2.5.9" status="release" pubdate="20161008193754" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3438" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.5.9/play-iteratees_2.11-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -1009,7 +1118,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-classic">
-			<revision name="1.1.7" status="release" pubdate="20160329172502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+			<revision name="1.1.7" status="release" pubdate="20160329172502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
 				<metadata-artifact status="no" details="" size="9928" time="0" location="/Users/italosantana/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.0"/>
 				<artifacts>
@@ -1020,7 +1129,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-core">
-			<revision name="1.1.7" status="release" pubdate="20160329172356" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="36">
+			<revision name="1.1.7" status="release" pubdate="20160329172356" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="42">
 				<metadata-artifact status="no" details="" size="9210" time="0" location="/Users/italosantana/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.0"/>
 				<artifacts>
@@ -1031,7 +1140,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.3.0" status="release" pubdate="20150508124611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="90">
+			<revision name="1.3.0" status="release" pubdate="20150508124611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2731" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe/config/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.3.0/config-1.3.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.0"/>
@@ -1043,7 +1152,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-stm" name="scala-stm_2.11">
-			<revision name="0.7" status="release" pubdate="20140418014442" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nbronson.github.com/scala-stm/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+			<revision name="0.7" status="release" pubdate="20140418014442" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nbronson.github.com/scala-stm/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
 				<license name="BSD" url="https://github.com/nbronson/scala-stm/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="2531" time="0" location="/Users/italosantana/.ivy2/cache/org.scala-stm/scala-stm_2.11/ivy-0.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="1.0"/>
@@ -1055,7 +1164,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="build-link">
-			<revision name="2.5.9" status="release" pubdate="20161008193541" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+			<revision name="2.5.9" status="release" pubdate="20161008193541" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2647" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/build-link/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.5.9/build-link-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -1067,7 +1176,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-exceptions">
-			<revision name="2.5.9" status="release" pubdate="20161008193531" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="92">
+			<revision name="2.5.9" status="release" pubdate="20161008193531" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2478" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.5.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.5.9/play-exceptions-2.5.9.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.5.9" rev-constraint-default="2.5.9" rev-constraint-dynamic="2.5.9" callerrev="1.0"/>
@@ -1078,8 +1187,56 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.apache.lucene" name="lucene-queryparser">
+			<revision name="5.5.2" status="release" pubdate="20160624152702" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="459133" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-5.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/5.5.2/lucene-queryparser-5.5.2.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="5.5.2" rev-constraint-default="5.5.2" rev-constraint-dynamic="5.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="lucene-queryparser" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="405048" time="920" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-queryparser/srcs/lucene-queryparser-5.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/5.5.2/lucene-queryparser-5.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-sandbox">
+			<revision name="5.5.2" status="release" pubdate="20160624152228" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="459358" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-5.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/5.5.2/lucene-sandbox-5.5.2.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="5.5.2" rev-constraint-default="5.5.2" rev-constraint-dynamic="5.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="lucene-sandbox" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="170714" time="706" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-sandbox/srcs/lucene-sandbox-5.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/5.5.2/lucene-sandbox-5.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queries">
+			<revision name="5.5.2" status="release" pubdate="20160624152726" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="458298" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-5.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/5.5.2/lucene-queries-5.5.2.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="5.5.2" rev-constraint-default="5.5.2" rev-constraint-dynamic="5.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="lucene-queries" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="153238" time="680" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-queries/srcs/lucene-queries-5.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/5.5.2/lucene-queries-5.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="5.5.2" status="release" pubdate="20160624152512" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="457451" time="0" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-core/ivy-5.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.5.2/lucene-core-5.5.2.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="5.5.2" rev-constraint-default="5.5.2" rev-constraint-dynamic="5.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="lucene-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1818359" time="973" location="/Users/italosantana/.ivy2/cache/org.apache.lucene/lucene-core/srcs/lucene-core-5.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.5.2/lucene-core-5.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
-			<revision name="2.7.6" status="release" pubdate="20160722232537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+			<revision name="2.7.6" status="release" pubdate="20160722232537" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6757" time="0" location="/Users/italosantana/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.7.6/jackson-annotations-2.7.6.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="1.0"/>
@@ -1091,7 +1248,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.netty" name="netty-reactive-streams">
-			<revision name="1.0.8" status="release" pubdate="20160912050042" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+			<revision name="1.0.8" status="release" pubdate="20160912050042" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
 				<metadata-artifact status="no" details="" size="5190" time="0" location="/Users/italosantana/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/ivy-1.0.8.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/1.0.8/netty-reactive-streams-1.0.8.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.8" rev-constraint-default="1.0.8" rev-constraint-dynamic="1.0.8" callerrev="1.0"/>
 				<artifacts>
@@ -1102,7 +1259,7 @@
 			</revision>
 		</module>
 		<module organisation="org.reactivestreams" name="reactive-streams">
-			<revision name="1.0.0" status="release" pubdate="20150429131454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="98">
+			<revision name="1.0.0" status="release" pubdate="20150429131454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="112">
 				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
 				<metadata-artifact status="no" details="" size="2397" time="0" location="/Users/italosantana/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0"/>
@@ -1114,7 +1271,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-handler">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829135840" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="99">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829135840" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="113">
 				<metadata-artifact status="no" details="" size="18004" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-handler/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-handler/4.0.41.Final/netty-handler-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
@@ -1125,7 +1282,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-codec">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829135741" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="72">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829135741" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="85">
 				<metadata-artifact status="no" details="" size="17697" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-codec/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-codec/4.0.41.Final/netty-codec-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
@@ -1136,7 +1293,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-transport">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829135711" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="80">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829135711" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="92">
 				<metadata-artifact status="no" details="" size="17045" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-transport/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-transport/4.0.41.Final/netty-transport-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
@@ -1147,7 +1304,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-buffer">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829135556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="49">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829135556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="56">
 				<metadata-artifact status="no" details="" size="17039" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-buffer/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-buffer/4.0.41.Final/netty-buffer-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
@@ -1158,12 +1315,47 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-common">
-			<revision name="4.0.41.Final" status="release" pubdate="20160829135431" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="95">
+			<revision name="4.0.41.Final" status="release" pubdate="20160829135431" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="109">
 				<metadata-artifact status="no" details="" size="16462" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-common/ivy-4.0.41.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-common/4.0.41.Final/netty-common-4.0.41.Final.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.0.41.Final" rev-constraint-default="4.0.41.Final" rev-constraint-dynamic="4.0.41.Final" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="netty-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="329721" time="0" location="/Users/italosantana/.ivy2/cache/io.netty/netty-common/srcs/netty-common-4.0.41.Final-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty-common/4.0.41.Final/netty-common-4.0.41.Final-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-expression">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070502" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2755" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-expression/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-expression" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="205992" time="1470" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-expression/srcs/spring-expression-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-core">
+			<revision name="4.3.7.RELEASE" status="release" pubdate="20170301070518" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spring-projects/spring-framework" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="115">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3200" time="0" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-core/ivy-4.3.7.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="4.3.7.RELEASE" rev-constraint-default="4.3.7.RELEASE" rev-constraint-dynamic="4.3.7.RELEASE" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="734386" time="780" location="/Users/italosantana/.ivy2/cache/org.springframework/spring-core/srcs/spring-core-4.3.7.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106111535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+				<metadata-artifact status="no" details="" size="10374" time="0" location="/Users/italosantana/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="/Users/italosantana/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1180,7 +1372,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-api">
-			<revision name="1.7.21" status="release" pubdate="20160404153640" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+			<revision name="1.7.21" status="release" pubdate="20160404153640" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
 				<metadata-artifact status="no" details="" size="5287" time="0" location="/Users/italosantana/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom"/>
 				<caller organisation="ifood-backend-connection-test" name="ifood-backend-connection-test$sources_2.11" conf="compile-internal, compile, provided, optional" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.0"/>
 				<artifacts>
@@ -1191,7 +1383,7 @@
 			</revision>
 		</module>
 		<module organisation="org.javassist" name="javassist">
-			<revision name="3.20.0-GA" status="release" pubdate="20150625090935" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="101">
+			<revision name="3.20.0-GA" status="release" pubdate="20150625090935" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="117">
 				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>

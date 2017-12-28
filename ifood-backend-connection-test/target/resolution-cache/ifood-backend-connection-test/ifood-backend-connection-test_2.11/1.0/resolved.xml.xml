@@ -4,7 +4,7 @@
 		module="ifood-backend-connection-test_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20171219121006"
+		publication="20171228160342"
 	>
 		<description>
 		ifood-backend-connection-test
@@ -47,6 +47,7 @@
 		<dependency org="com.typesafe.play" name="filters-helpers_2.11" rev="2.5.9" conf="compile->default(compile)"/>
 		<dependency org="org.mybatis" name="mybatis" rev="3.4.1" conf="compile->default(compile)"/>
 		<dependency org="org.mybatis" name="mybatis-guice" rev="3.8" conf="compile->default(compile)"/>
+		<dependency org="org.mybatis.caches" name="mybatis-ignite" rev="1.0.6" conf="compile->default(compile)"/>
 		<dependency org="com.google.inject.extensions" name="guice-multibindings" rev="4.0" conf="compile->default(compile)"/>
 		<dependency org="org.mindrot" name="jbcrypt" rev="0.3m" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="6.0.6" conf="compile->default(compile)"/>

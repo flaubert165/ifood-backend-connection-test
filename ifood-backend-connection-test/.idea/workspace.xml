@@ -2,15 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__javax_cache_cache_api_1_0_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_ignite_ignite_core_2_1_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_ignite_ignite_indexing_2_1_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_ignite_ignite_spring_2_1_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_analyzers_common_5_5_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_core_5_5_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_queries_5_5_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_queryparser_5_5_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_sandbox_5_5_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_gridgain_ignite_shmem_1_0_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_jetbrains_annotations_13_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_mybatis_caches_mybatis_ignite_1_0_6_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_aop_4_3_7_RELEASE_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_core_4_3_7_RELEASE_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_expression_4_3_7_RELEASE_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_tx_4_3_7_RELEASE_jar.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_logging_commons_logging_1_2_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f413abb376c9982ebb8f$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f413abb376c9982ebb8f$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f413abb376c9982ebb8f.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f413abb376c9982ebb8f.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_h2database_h2_1_4_192_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_h2database_h2_1_4_195_jar.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_beans_4_2_7_RELEASE_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_beans_4_3_7_RELEASE_jar.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_context_4_2_7_RELEASE_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_context_4_3_7_RELEASE_jar.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_core_4_2_7_RELEASE_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_springframework_spring_jdbc_4_3_7_RELEASE_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/config-classes/$e6d4688998018de2daa1$$anonfun$$sbtdef$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$e6d4688998018de2daa1$$anonfun$$sbtdef$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/config-classes/$e6d4688998018de2daa1$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$e6d4688998018de2daa1$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/AuthenticationService.java" afterPath="$PROJECT_DIR$/app/business/AuthenticationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" afterPath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ifood-backend-connection-test.iml" afterPath="$PROJECT_DIR$/ifood-backend-connection-test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/ifood-backend-connection-test-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/ifood-backend-connection-test-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/ifood-backend-connection-test-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/ifood-backend-connection-test-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ifood-backend-connection-test-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test$sources_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test$sources_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/ifood-backend-connection-test/ifood-backend-connection-test_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test$sources_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ifood-backend-connection-test-ifood-backend-connection-test_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,11 +129,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="163">
+              <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#publish#0;class#MqttService#0" expanded="false" />
@@ -64,11 +145,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IUserRepository.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding>
+                <marker date="1514425276539" expanded="true" signature="254:272" ph="SELECT * FRO... user" />
+                <marker date="1514425276539" expanded="true" signature="254:296" ph="SELECT * FRO... user" />
+                <marker date="1514425276539" expanded="true" signature="395:440" ph="SELECT * FRO... user" />
+                <marker date="1514425276539" expanded="true" signature="530:578" ph="SELECT * FRO... user" />
+                <marker date="1514425276539" expanded="true" signature="634:689" ph="SELECT lastR... user" />
+                <marker date="1514425276539" expanded="true" signature="761:968" ph="INSERT INTO user... " />
+                <marker date="1514425276539" expanded="true" signature="1027:1083" ph="UPDATE user " />
+                <marker date="1514425276539" expanded="true" signature="1145:1229" ph="UPDATE user " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="1296">
+              <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#AuthenticationService#0;class#AuthenticationService#0" expanded="false" />
@@ -97,8 +207,18 @@
       <file leaf-file-name="restaurants.query.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+            <state relative-caret-position="164">
+              <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnavailabilityScheduleService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -108,7 +228,7 @@
         <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -163,7 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../ifood-frontend-client/tslint.json" />
         <option value="$PROJECT_DIR$/app/domain/enums/Status.java" />
         <option value="$PROJECT_DIR$/app/domain/dto/inputs/UserDto.java" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/models/enums/status.ts" />
@@ -214,6 +333,7 @@
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
         <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/build.sbt" />
       </list>
     </option>
   </component>
@@ -294,29 +414,6 @@
               <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="inputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -336,6 +433,12 @@
               <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
@@ -563,7 +666,7 @@
     </list>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1513696162120" />
+    <option name="lastUpdateTimestamp" value="1514487785731" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -613,7 +716,7 @@
       <workItem from="1514299500942" duration="406000" />
       <workItem from="1514299928700" duration="24738000" />
       <workItem from="1514382272959" duration="33310000" />
-      <workItem from="1514433333891" duration="12315000" />
+      <workItem from="1514433333891" duration="12932000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -640,7 +743,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232517000" />
+    <option name="totallyTimeSpent" value="233134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,14 +866,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1015,14 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/domain/dto/inputs/UnavailabilityScheduleDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1116,23 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <marker date="1514425276539" expanded="true" signature="254:272" ph="SELECT * FRO... user" />
-            <marker date="1514425276539" expanded="true" signature="254:296" ph="SELECT * FRO... user" />
-            <marker date="1514425276539" expanded="true" signature="395:440" ph="SELECT * FRO... user" />
-            <marker date="1514425276539" expanded="true" signature="530:578" ph="SELECT * FRO... user" />
-            <marker date="1514425276539" expanded="true" signature="634:689" ph="SELECT lastR... user" />
-            <marker date="1514425276539" expanded="true" signature="761:968" ph="INSERT INTO user... " />
-            <marker date="1514425276539" expanded="true" signature="1027:1083" ph="UPDATE user " />
-            <marker date="1514425276539" expanded="true" signature="1145:1229" ph="UPDATE user " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -1176,37 +1246,31 @@
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+        <state relative-caret-position="164">
+          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
+    <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#publish#0;class#MqttService#0" expanded="false" />
-            <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
-            <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
-            <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="1296">
+          <caret line="95" column="13" lean-forward="false" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AuthenticationService#0;class#AuthenticationService#0" expanded="false" />
@@ -1217,6 +1281,45 @@
             <element signature="docComment;method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
             <element signature="method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
             <element signature="method#publishStatusMqttMessage#0;class#AuthenticationService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <marker date="1514425276539" expanded="true" signature="254:272" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="254:296" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="395:440" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="530:578" ph="SELECT * FRO... user" />
+            <marker date="1514425276539" expanded="true" signature="634:689" ph="SELECT lastR... user" />
+            <marker date="1514425276539" expanded="true" signature="761:968" ph="INSERT INTO user... " />
+            <marker date="1514425276539" expanded="true" signature="1027:1083" ph="UPDATE user " />
+            <marker date="1514425276539" expanded="true" signature="1145:1229" ph="UPDATE user " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#publish#0;class#MqttService#0" expanded="false" />
+            <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
+            <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
+            <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
           </folding>
         </state>
       </provider>
