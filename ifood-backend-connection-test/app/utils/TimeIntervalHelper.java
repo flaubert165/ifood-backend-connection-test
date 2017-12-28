@@ -31,24 +31,27 @@ public class TimeIntervalHelper {
       * @param schedules
      * @return
      */
-   public static Status verifyStatus(List<UnavailabilityScheduleOutputDto> schedules){
+   public static Status verifyStatus(List<UnavailabilityScheduleOutputDto> schedules) {
 
-        Time now = toSqlTime(LocalTime.now());
+       Time now = toSqlTime(LocalTime.now());
 
+       if (schedules.size() == 0 && !isBetweenAvailableTime(now)) {
+           return Status.UnavailableOffline;
+       } else if (schedules.size() > 0) {
+           for (UnavailabilityScheduleOutputDto schedule : schedules) {
 
-            for(UnavailabilityScheduleOutputDto schedule : schedules){
+               if ((now.before(schedule.getStart()) || now.equals(schedule.getStart())) &&
+                       (now.before((schedule.getEnd())) || now.equals(schedule.getEnd())) ||
+                       !isBetweenAvailableTime(now)) {
+                   return Status.UnavailableOffline;
+               } else if (isBetweenAvailableTime(now)) {
+                   return Status.AvailableOnline;
+               }
+           }
+       }
 
-                if((now.before(schedule.getStart()) || now.equals(schedule.getStart())) &&
-                        (now.before((schedule.getEnd())) || now.equals(schedule.getEnd())) ||
-                        !isBetweenAvailableTime(now)){
-                    return Status.UnavailableOffline;
-                } else if(isBetweenAvailableTime(now)){
-                    return Status.AvailableOnline;
-                }
-            }
-
-        return Status.AvailableOffline;
-    }
+       return Status.AvailableOffline;
+   }
 
 
     /**

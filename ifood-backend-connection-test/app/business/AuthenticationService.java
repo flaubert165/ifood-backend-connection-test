@@ -123,7 +123,12 @@ public class AuthenticationService implements IAuthenticationRepository{
 
         List<UnavailabilityScheduleOutputDto> schedules = _schedulesService.getByUserId(userId);
 
-        return schedules == null || schedules.size() == 0 ? Status.AvailableOnline : TimeIntervalHelper.verifyStatus(schedules);
+        if ((schedules == null || schedules.size() == 0) &&
+                TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
+            return Status.AvailableOnline;
+        } else{
+            return TimeIntervalHelper.verifyStatus(schedules);
+        }
     }
 
     /**
