@@ -41,7 +41,7 @@ public class TimeIntervalHelper {
            for (UnavailabilityScheduleOutputDto schedule : schedules) {
 
                if ((now.before(schedule.getStart()) || now.equals(schedule.getStart())) &&
-                       (now.before((schedule.getEnd())) || now.equals(schedule.getEnd())) ||
+                       (now.after((schedule.getEnd())) || now.equals(schedule.getEnd())) ||
                        !isBetweenAvailableTime(now)) {
                    return Status.UnavailableOffline;
                } else if (isBetweenAvailableTime(now)) {
@@ -52,7 +52,6 @@ public class TimeIntervalHelper {
 
        return Status.AvailableOffline;
    }
-
 
     /**
      * convert localtime to sqltime
@@ -107,33 +106,44 @@ public class TimeIntervalHelper {
 
     public static long calculatesOfflineUserTime(java.util.Date lastRequest) throws Exception{
         long minutes;
-        Time lastRequestTime = toSqlTime(LocalTime.of(lastRequest.getHours(),
-                lastRequest.getMinutes(), lastRequest.getSeconds(), 00000));
-        LocalDateTime now = LocalDateTime.now();
-        Time nowTime = toSqlTime(LocalTime.of(now.getHour(),
-                now.getMinute(), now.getSecond(), 00000));
-        Instant instantNow = now.toInstant(ZoneOffset.UTC);
+
+        java.util.Date now = localDateTimeToDate();
+
         Time openTime = toSqlTime(OPENTIME);
         Time closeTime = toSqlTime(CLOSETIME);
 
+        Time lastRequestTime = toSqlTime(LocalTime.of(lastRequest.getHours(),
+                lastRequest.getMinutes(), lastRequest.getSeconds(), 00000));
+
+        Time nowTime = toSqlTime(LocalTime.of(now.getHours(),
+                now.getMinutes(), now.getSeconds(), 00000));
+
         // between opentime and closetime
         if(lastRequestTime.after(openTime) && nowTime.before(closeTime)){
-            Duration duration = Duration.between(lastRequest.toInstant(), instantNow);
+            Duration duration = Duration.between(lastRequest.toInstant(), now.toInstant());
             minutes = duration.toMinutes();
             return minutes;
             // after opentime and closetime, check the proportional value
         } else if(lastRequestTime.after(openTime) && !nowTime.before(closeTime)){
-            Duration duration = Duration.between(lastRequestTime.toInstant(), closeTime.toInstant());
+            Duration duration = Duration.between(lastRequestTime.toInstant(), now.toInstant());
             minutes = duration.toMinutes();
             return minutes;
             // before opentime and closetime, check the proportional value
         } else if(!lastRequestTime.after(openTime) && nowTime.before(closeTime)){
-            Duration duration = Duration.between(openTime.toInstant(), instantNow);
+            Duration duration = Duration.between(openTime.toInstant(), now.toInstant());
             minutes = duration.toMinutes();
             return minutes;
         } else{
             minutes = 0L;
             return minutes;
         }
+    }
+
+    public static java.util.Date localDateTimeToDate(){
+
+        java.util.Date in = new java.util.Date();
+        LocalDateTime ldt = LocalDateTime.ofInstant(in.toInstant(), ZoneId.systemDefault());
+
+        return java.util.Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
     }
 }

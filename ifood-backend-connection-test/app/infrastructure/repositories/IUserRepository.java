@@ -17,6 +17,6 @@ public interface IUserRepository {
     User getUserByEmail(String email) throws UserException;
     void delete(long id) throws UserException;
     Date getLastRequest(long id) throws AuthenticationException;
-    void updateLastRequest(LocalDateTime lastRequest, long userId);
+    void updateLastRequest(java.util.Date lastRequest, long userId);
     void updateMinutesOffline(long minutes, long userId);
 }

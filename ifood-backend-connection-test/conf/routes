@@ -4,7 +4,6 @@
 
 #AUTH ROUTES
 POST    /auth/login                 presentation.controllers.AuthenticationController.login()
-GET     /auth/                      presentation.controllers.AuthenticationController.logout()
 GET     /auth/status                presentation.controllers.AuthenticationController.status()
 
 #USER ROUTES

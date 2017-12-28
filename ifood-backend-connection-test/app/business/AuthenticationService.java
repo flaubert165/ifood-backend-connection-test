@@ -138,7 +138,7 @@ public class AuthenticationService implements IAuthenticationRepository{
      */
     public void updateOfflineTime(long userId, java.util.Date lastRequest) throws Exception{
 
-        LocalDateTime now = LocalDateTime.now(ZoneOffset.UTC);;
+        java.util.Date now = TimeIntervalHelper.localDateTimeToDate();
 
         if(lastRequest == null){
             _userService.updateLastRequest(now, userId);

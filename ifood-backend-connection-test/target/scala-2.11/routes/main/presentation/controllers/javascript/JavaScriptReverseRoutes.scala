@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/italosantana/Desktop/ifood-backend-connection-test/ifood-backend-connection-test/conf/routes
-// @DATE:Wed Dec 27 11:20:05 BRT 2017
+// @DATE:Thu Dec 28 10:18:55 BRT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package presentation.controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:15
+  // @LINE:14
   class ReverseUnavalabilityScheduleController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package presentation.controllers.javascript {
     }
 
   
-    // @LINE:15
+    // @LINE:14
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UnavalabilityScheduleController.create",
       """
@@ -33,7 +33,7 @@ package presentation.controllers.javascript {
       """
     )
   
-    // @LINE:17
+    // @LINE:16
     def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UnavalabilityScheduleController.delete",
       """
@@ -43,7 +43,7 @@ package presentation.controllers.javascript {
       """
     )
   
-    // @LINE:16
+    // @LINE:15
     def getByUserId: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UnavalabilityScheduleController.getByUserId",
       """
@@ -55,7 +55,7 @@ package presentation.controllers.javascript {
   
   }
 
-  // @LINE:11
+  // @LINE:10
   class ReverseUserController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -63,7 +63,7 @@ package presentation.controllers.javascript {
     }
 
   
-    // @LINE:11
+    // @LINE:10
     def getAll: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UserController.getAll",
       """
@@ -73,7 +73,7 @@ package presentation.controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:11
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UserController.create",
       """
@@ -93,22 +93,12 @@ package presentation.controllers.javascript {
     }
 
   
-    // @LINE:8
+    // @LINE:7
     def status: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.AuthenticationController.status",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "auth/status"})
-        }
-      """
-    )
-  
-    // @LINE:7
-    def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "presentation.controllers.AuthenticationController.logout",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "auth/"})
         }
       """
     )

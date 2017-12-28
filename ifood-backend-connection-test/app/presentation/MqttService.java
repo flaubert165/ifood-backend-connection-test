@@ -55,10 +55,6 @@ public class MqttService implements MqttCallbackExtended{
         return subject;
     }
 
-    public void publish(String topic, byte[] data) {
-        this.publish(topic, data, 1);
-    }
-
     public void publish(String topic, byte[] data, int qos) {
         try {
             MqttMessage mqttMessage = new MqttMessage(data);

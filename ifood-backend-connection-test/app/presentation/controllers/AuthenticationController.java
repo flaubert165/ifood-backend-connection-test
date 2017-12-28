@@ -28,10 +28,4 @@ public class AuthenticationController extends Controller {
     public Result login() throws Exception {
         return ok(Json.toJson(this._service.login(Json.fromJson(request().body().asJson(), SignInDto.class))));
     }
-
-    public Result logout() throws AuthenticationException, UserException {
-        //this._service.logout();
-        return ok();
-    }
-
 }
