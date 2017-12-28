@@ -41,7 +41,13 @@ public class TimeIntervalHelper {
        } else if (schedules.size() > 0) {
 
            for (UnavailabilityScheduleOutputDto schedule : schedules) {
-               if ((now.after(schedule.getStart()) || now.before((schedule.getEnd()))) ||
+
+               Time startTime = toSqlTime(LocalTime.of(schedule.getStart().getHours(),
+                       schedule.getStart().getMinutes(), schedule.getStart().getSeconds(), 00000));
+               Time endTime = toSqlTime(LocalTime.of(schedule.getEnd().getHours(),
+                       schedule.getEnd().getMinutes(), schedule.getEnd().getSeconds(), 00000));
+
+               if ((now.after(startTime) || now.equals(startTime)) && (now.before(endTime) || now.equals(endTime)) ||
                        !isBetweenAvailableTime(now)) {
                    return  Status.UnavailableOffline;
                } else if (isBetweenAvailableTime(now)) {

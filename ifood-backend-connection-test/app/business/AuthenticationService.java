@@ -70,13 +70,13 @@ public class AuthenticationService implements IAuthenticationRepository{
             userOutput.setId(user.getId());
             userOutput.setName(user.getName());
             userOutput.setToken(SecurityHelper.generateSessionToken(user.getEmail()));
+            userOutput.setMinutesOffline(user.getMinutesOffline());
 
             updateOfflineTime(user.getId(), user.getLastRequest());
 
             this.login(user.getId(), userOutput.getStatus());
 
-            this._mqttService.publish("restaurants/online/",
-                    Json.stringify(Json.toJson(userOutput)).getBytes(), 1);
+            publishStatusMqttMessage(userOutput);
 
         }else {
             throw new AuthenticationException();
@@ -91,20 +91,15 @@ public class AuthenticationService implements IAuthenticationRepository{
      * @throws AuthenticationException
      * @throws UserException
      */
-    public void logout(long id) throws AuthenticationException, UserException {
+    public void logout(long id) throws Exception {
 
             UserOutputDto user = this._userService.getUserById(id);
 
-            if(TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
-                this.logout(user.getId(), Status.AvailableOffline);
-                user.setStatus(Status.AvailableOffline);
-            }else {
-                this.logout(user.getId(), Status.UnavailableOffline);
-                user.setStatus(Status.UnavailableOffline);
-            }
+            user.setStatus(verifyStatusOnLogout(user.getId()));
 
-            this._mqttService.publish("restaurants/offline/",
-                Json.stringify(Json.toJson(user)).getBytes(), 1);
+            logout(user.getId(), user.getStatus());
+
+            publishStatusMqttMessage(user);
     }
 
     /**
@@ -120,6 +115,18 @@ public class AuthenticationService implements IAuthenticationRepository{
         if ((schedules == null || schedules.size() == 0) &&
                 TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
             return Status.AvailableOnline;
+        } else{
+            return TimeIntervalHelper.verifyStatus(schedules);
+        }
+    }
+
+    public Status verifyStatusOnLogout(long userId) throws Exception{
+
+        List<UnavailabilityScheduleOutputDto> schedules = _schedulesService.getByUserId(userId);
+
+        if ((schedules == null || schedules.size() == 0) &&
+                TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
+            return Status.AvailableOffline;
         } else{
             return TimeIntervalHelper.verifyStatus(schedules);
         }
@@ -142,5 +149,11 @@ public class AuthenticationService implements IAuthenticationRepository{
             _userService.updateMinutesOffline(minutes, userId);
         }
 
+    }
+
+    public void publishStatusMqttMessage(UserOutputDto dto){
+
+        this._mqttService.publish("restaurants/status/",
+                Json.stringify(Json.toJson(dto)).getBytes(), 1);
     }
 }
