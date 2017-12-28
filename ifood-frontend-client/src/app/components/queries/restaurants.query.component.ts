@@ -26,7 +26,6 @@ export class RestaurantsQueryComponent implements OnInit {
   public unavailableSubscription: Subscription;
   header: any;
 
-
   constructor(private userService: UserService,
               private mqttService: MqttService,
               private authenticationService: AuthenticationService,

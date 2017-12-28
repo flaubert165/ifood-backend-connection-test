@@ -13,13 +13,7 @@ import infrastructure.repositories.IAuthenticationRepository;
 import play.libs.Json;
 import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
-
-import java.sql.Date;
-import java.sql.Time;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.ZoneOffset;
 import java.util.List;
 
 public class AuthenticationService implements IAuthenticationRepository{
