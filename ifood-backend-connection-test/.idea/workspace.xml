@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/AuthenticationService.java" afterPath="$PROJECT_DIR$/app/business/AuthenticationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" afterPath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,10 +45,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="164">
               <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,12 +61,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-694">
-              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="419">
+              <caret line="140" column="61" lean-forward="false" selection-start-line="140" selection-start-column="61" selection-end-line="140" selection-end-column="61" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#AuthenticationService#0;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
@@ -79,6 +84,25 @@
             <state relative-caret-position="360">
               <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeIntervalHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="docComment;method#verifyStatus#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="docComment;method#toSqlTime#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="method#calculateUnavailabiltyDuration#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
+                <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,11 +202,11 @@
         <option value="$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/presentation/MqttService.java" />
-        <option value="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
         <option value="$PROJECT_DIR$/app/business/UserService.java" />
         <option value="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
         <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
       </list>
     </option>
   </component>
@@ -430,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Run-Client">
+  <component name="RunManager" selected="Play 2 App.Run">
     <configuration name="Run-Client" type="js.build_tools.npm" factoryName="npm">
       <package-json value="$PROJECT_DIR$/../ifood-frontend-client/package.json" />
       <command value="run" />
@@ -588,7 +612,7 @@
       <workItem from="1514299500942" duration="406000" />
       <workItem from="1514299928700" duration="24738000" />
       <workItem from="1514382272959" duration="33310000" />
-      <workItem from="1514433333891" duration="3729000" />
+      <workItem from="1514433333891" duration="4910000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -615,7 +639,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223931000" />
+    <option name="totallyTimeSpent" value="225112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -628,6 +652,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22512437" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -639,7 +664,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3097015" sideWeight="0.48712447" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25124377" sideWeight="0.48712447" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -650,7 +675,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31965175" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21383648" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23032904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23032904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -719,8 +744,44 @@
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/business/AuthenticationService.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="196" />
+      <option name="time" value="208" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1110,10 +1171,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="430">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
             <element signature="method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
@@ -1123,14 +1192,28 @@
             <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
             <element signature="method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
             <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="140" column="61" lean-forward="false" selection-start-line="140" selection-start-column="61" selection-end-line="140" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AuthenticationService#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="164">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1138,27 +1221,6 @@
             <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
             <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
             <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-694">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
           </folding>
         </state>
       </provider>
