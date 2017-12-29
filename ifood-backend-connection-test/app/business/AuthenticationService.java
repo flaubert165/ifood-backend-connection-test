@@ -33,6 +33,9 @@ public class AuthenticationService implements IAuthenticationRepository{
         this._schedulesService = schedulesService;
         this._mqttService = mqttService;
 
+        /**
+         * Observer to listen the logout channel (keep-alive/idletimeout)
+         */
         this._mqttService.observer("restaurants/logout/").subscribe(mqttMessage -> {
 
             if(mqttMessage != null) {
