@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/AuthenticationService.java" afterPath="$PROJECT_DIR$/app/business/AuthenticationService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -79,8 +78,8 @@
       <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="369">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
@@ -617,7 +616,7 @@
       <workItem from="1514299500942" duration="406000" />
       <workItem from="1514299928700" duration="24738000" />
       <workItem from="1514382272959" duration="33310000" />
-      <workItem from="1514433333891" duration="14328000" />
+      <workItem from="1514433333891" duration="14507000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -644,7 +643,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234530000" />
+    <option name="totallyTimeSpent" value="234709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1210,8 +1209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="369">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
