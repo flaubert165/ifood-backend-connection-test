@@ -7,8 +7,8 @@ import java.util.Date;
 public class UnavailabilitySchedule implements Entity {
 
     private long id;
-    private Date startTime;
-    private Date endTime;
+    private Date start;
+    private Date end;
 
 
 
@@ -20,19 +20,20 @@ public class UnavailabilitySchedule implements Entity {
     @Override
     public void setId(long id) { this.id = id;}
 
-    public Date getStartTime() {
-        return startTime;
+
+    public Date getStart() {
+        return start;
     }
 
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
+    public void setStart(Date start) {
+        this.start = start;
     }
 
-    public Date getEndTime() {
-        return endTime;
+    public Date getEnd() {
+        return end;
     }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+    public void setEnd(Date end) {
+        this.end = end;
     }
 }
