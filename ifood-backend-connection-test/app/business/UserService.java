@@ -14,6 +14,7 @@ import utils.TimeIntervalHelper;
 
 import java.sql.Date;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,11 +50,14 @@ public class UserService implements IUserRepository{
 
             try {
 
-                 List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
+                if(user.getStatus() != Status.AvailableOnline) {
 
-                 user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
-                 this._repository.updateStatus(user.getStatus(), user.getId());
-                 this.updateOfflineTime(user.getId(), user.getLastRequest());
+                    List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
+
+                    user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
+                    this._repository.updateStatus(user.getStatus(), user.getId());
+                    this.updateOfflineTime(user.getId(), user.getLastRequest());
+                }
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -110,5 +114,17 @@ public class UserService implements IUserRepository{
             this._repository.updateMinutesOffline(minutes, userId);
         }
 
+    }
+
+    public Status verifyStatus(long userId) throws Exception{
+
+        List<UnavailabilityScheduleOutputDto> schedules = _schedulesService.getByUserId(userId);
+
+        if ((schedules == null || schedules.size() == 0) &&
+                TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
+            return Status.AvailableOnline;
+        } else{
+            return TimeIntervalHelper.verifyStatus(schedules);
+        }
     }
 }

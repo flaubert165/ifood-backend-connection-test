@@ -55,7 +55,8 @@ public class TimeIntervalHelper {
                }
            }
 
-       }else{
+       }
+       else{
            finalStatus = Status.AvailableOffline;
        }
 
