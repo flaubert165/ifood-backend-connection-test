@@ -1,4 +1,4 @@
-package presentation;
+package infrastructure;
 
 import com.typesafe.config.ConfigFactory;
 import io.reactivex.subjects.PublishSubject;

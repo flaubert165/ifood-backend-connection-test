@@ -3,6 +3,7 @@ package presentation;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.AbstractModule;
+import infrastructure.MqttService;
 import play.libs.Json;
 
 public class PresentationModule extends AbstractModule {
