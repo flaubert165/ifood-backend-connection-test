@@ -35,4 +35,8 @@
         UPDATE user SET minutesOffline = minutesOffline + #{arg0}
         WHERE id = #{arg1}
     </update>
+    <update id="updateStatus">
+        UPDATE user SET status = #{arg0}
+        WHERE id = #{arg1}
+    </update>
 </mapper>

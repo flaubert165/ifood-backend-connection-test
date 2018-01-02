@@ -2,8 +2,10 @@ package business;
 
 import com.google.inject.Inject;
 import domain.dto.inputs.UserDto;
+import domain.dto.outputs.UnavailabilityScheduleOutputDto;
 import domain.dto.outputs.UserOutputDto;
 import domain.entities.User;
+import domain.enums.Status;
 import exceptions.AuthenticationException;
 import exceptions.UserException;
 import infrastructure.repositories.IUserRepository;
@@ -19,10 +21,12 @@ import java.util.List;
 public class UserService implements IUserRepository{
 
     private IUserRepository _repository;
+    private UnavailabilityScheduleService _schedulesService;
 
     @Inject
-    public UserService(IUserRepository repository){
+    public UserService(IUserRepository repository, UnavailabilityScheduleService schedulesService){
         this._repository = repository;
+        this._schedulesService = schedulesService;
     }
 
     public void create(UserDto user) throws UserException {
@@ -39,7 +43,24 @@ public class UserService implements IUserRepository{
 
     public List<UserOutputDto> getUsers() throws UserException {
 
-        return this._repository.getUsers();
+        List<UserOutputDto> users = this._repository.getUsers();
+
+        for(UserOutputDto user : users){
+
+            try {
+
+                List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
+
+                 user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
+                 this._repository.updateStatus(user.getStatus(), user.getId());
+                
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        return users;
     }
 
     @Override
@@ -62,13 +83,17 @@ public class UserService implements IUserRepository{
     }
 
     @Override
-    public void updateLastRequest(java.util.Date lastRequest, long userId) {
+    public void updateLastRequest(java.util.Date lastRequest, long userId) throws UserException {
         this._repository.updateLastRequest(lastRequest, userId);
     }
 
     @Override
-    public void updateMinutesOffline(long minutes, long userId) {
+    public void updateMinutesOffline(long minutes, long userId) throws UserException {
         this._repository.updateMinutesOffline(minutes, userId);
     }
 
+    @Override
+    public void updateStatus(Status status, long userId) throws UserException {
+        this._repository.updateStatus(status, userId);
+    }
 }
