@@ -49,11 +49,12 @@ public class UserService implements IUserRepository{
 
             try {
 
-                List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
+                 List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
 
                  user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
                  this._repository.updateStatus(user.getStatus(), user.getId());
-                
+                 this.updateOfflineTime(user.getId(), user.getLastRequest());
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -95,5 +96,19 @@ public class UserService implements IUserRepository{
     @Override
     public void updateStatus(Status status, long userId) throws UserException {
         this._repository.updateStatus(status, userId);
+    }
+
+    public void updateOfflineTime(long userId, java.util.Date lastRequest) throws Exception{
+
+        java.util.Date now = TimeIntervalHelper.localDateTimeToDate();
+
+        if(lastRequest == null){
+            this._repository.updateLastRequest(now, userId);
+        }else {
+            this._repository.updateLastRequest(now, userId);
+            long minutes = TimeIntervalHelper.calculatesOfflineUserTime(lastRequest);
+            this._repository.updateMinutesOffline(minutes, userId);
+        }
+
     }
 }

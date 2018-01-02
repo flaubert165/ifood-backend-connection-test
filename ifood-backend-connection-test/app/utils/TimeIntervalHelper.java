@@ -133,12 +133,12 @@ public class TimeIntervalHelper {
             minutes = duration.toMinutes();
             return minutes;
             // after opentime and closetime, check the proportional value
-        } else if(lastRequestTime.after(openTime) && !nowTime.before(closeTime)){
-            Duration duration = Duration.between(lastRequestTime.toInstant(), now.toInstant());
+        } else if(lastRequestTime.after(openTime) && nowTime.after(closeTime)){
+            Duration duration = Duration.between(lastRequestTime.toInstant(), closeTime.toInstant());
             minutes = duration.toMinutes();
             return minutes;
             // before opentime and closetime, check the proportional value
-        } else if(!lastRequestTime.after(openTime) && nowTime.before(closeTime)){
+        } else if(nowTime.after(openTime) && (lastRequestTime.before(openTime) && nowTime.before(closeTime))){
             Duration duration = Duration.between(openTime.toInstant(), now.toInstant());
             minutes = duration.toMinutes();
             return minutes;

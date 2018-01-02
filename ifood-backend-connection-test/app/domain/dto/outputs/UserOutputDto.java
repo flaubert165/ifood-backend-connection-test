@@ -3,6 +3,7 @@ package domain.dto.outputs;
 import domain.enums.Status;
 
 import java.sql.Time;
+import java.util.Date;
 
 public class UserOutputDto {
     private long id;
@@ -10,6 +11,7 @@ public class UserOutputDto {
     private Status status;
     private String token;
     private long minutesOffline;
+    private Date lastRequest;
 
     public UserOutputDto(){
 
@@ -61,5 +63,13 @@ public class UserOutputDto {
 
     public void setMinutesOffline(long minutesOffline) {
         this.minutesOffline = minutesOffline;
+    }
+
+    public Date getLastRequest() {
+        return lastRequest;
+    }
+
+    public void setLastRequest(Date lastRequest) {
+        this.lastRequest = lastRequest;
     }
 }

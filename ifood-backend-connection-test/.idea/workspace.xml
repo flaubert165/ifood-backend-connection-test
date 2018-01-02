@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/domain/entities/SessionLog.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/domain/dto/outputs/UserOutputDto.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/domain/dto/outputs/UserOutputDto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/utils/TimeIntervalHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/AuthenticationService.java" afterPath="$PROJECT_DIR$/app/business/AuthenticationService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/UserService.java" afterPath="$PROJECT_DIR$/app/business/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" afterPath="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" afterPath="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.xml" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/infrastructure/repositories/IUserRepository.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/domain/dto/outputs/UserOutputDto.java" afterPath="$PROJECT_DIR$/app/domain/dto/outputs/UserOutputDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" afterPath="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,8 +53,8 @@
       <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="133">
+              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#publish#0;class#MqttService#0" expanded="false" />
@@ -66,41 +66,48 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="84" column="25" lean-forward="true" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
+                <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
+                <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
+                <element signature="method#verifyStatusOnLogout#0;class#AuthenticationService#0" expanded="false" />
+                <element signature="method#publishStatusMqttMessage#0;class#AuthenticationService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UnavailabilityScheduleService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="222">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/presentation/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/business/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+            <state relative-caret-position="340">
+              <caret line="108" column="58" lean-forward="false" selection-start-line="108" selection-start-column="58" selection-end-line="108" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeIntervalHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TimeIntervalHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state relative-caret-position="388">
+              <caret line="142" column="43" lean-forward="true" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
               <folding>
                 <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
                 <element signature="method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
@@ -110,36 +117,6 @@
                 <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
                 <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUnavailabilityScheduleRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUnavailabilityScheduleRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restaurants.query.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -195,7 +172,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/domain/dto/inputs/UserDto.java" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/models/enums/status.ts" />
-        <option value="$PROJECT_DIR$/app/domain/dto/outputs/UserOutputDto.java" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/unavailability.schedules.query.component.ts" />
@@ -238,12 +214,13 @@
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
-        <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
         <option value="$PROJECT_DIR$/app/domain/entities/UnavailabilitySchedule.java" />
         <option value="$PROJECT_DIR$/app/infrastructure/repositories/IUserRepository.java" />
         <option value="$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml" />
-        <option value="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
+        <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
         <option value="$PROJECT_DIR$/app/business/UserService.java" />
+        <option value="$PROJECT_DIR$/app/domain/dto/outputs/UserOutputDto.java" />
+        <option value="$PROJECT_DIR$/app/utils/TimeIntervalHelper.java" />
       </list>
     </option>
   </component>
@@ -324,6 +301,21 @@
               <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,6 +343,12 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="presentation" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ifood-backend-connection-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ifood-backend-connection-test" type="b2602c69:ProjectViewProjectNode" />
@@ -481,7 +479,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Run-Client">
+  <component name="RunManager" selected="Play 2 App.Run">
     <configuration name="Run-Client" type="js.build_tools.npm" factoryName="npm">
       <package-json value="$PROJECT_DIR$/../ifood-frontend-client/package.json" />
       <command value="run" />
@@ -639,7 +637,7 @@
       <workItem from="1514299500942" duration="406000" />
       <workItem from="1514299928700" duration="24738000" />
       <workItem from="1514382272959" duration="33310000" />
-      <workItem from="1514433333891" duration="16066000" />
+      <workItem from="1514433333891" duration="17756000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -666,7 +664,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236268000" />
+    <option name="totallyTimeSpent" value="237958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,18 +776,11 @@
           <option name="timeStamp" value="205" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="235" />
+      <option name="time" value="240" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/home.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1061,18 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/domain/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#User#0;class#User#0" expanded="false" />
-            <element signature="method#User#1;class#User#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/models/enums/status.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1130,30 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUnavailabilityScheduleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/infrastructure/repositories/IUserRepository.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -1180,57 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
+    <entry file="file://$PROJECT_DIR$/app/infrastructure/repositories/IUnavailabilityScheduleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#verifyStatus#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#toSqlTime#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="method#calculateUnavailabiltyDuration#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
-            <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#verifyStatusOnLogout#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#updateOfflineTime#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#publishStatusMqttMessage#0;class#AuthenticationService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#publish#0;class#MqttService#0" expanded="false" />
-            <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
-            <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
-            <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="90">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1243,11 +1151,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/domain/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="method#User#0;class#User#0" expanded="false" />
+            <element signature="method#User#1;class#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/domain/dto/outputs/UserOutputDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/business/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        <state relative-caret-position="340">
+          <caret line="108" column="58" lean-forward="false" selection-start-line="108" selection-start-column="58" selection-end-line="108" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="84" column="25" lean-forward="true" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="method#verifyStatusOnLogout#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="method#publishStatusMqttMessage#0;class#AuthenticationService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presentation/MqttService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#publish#0;class#MqttService#0" expanded="false" />
+            <element signature="method#connectComplete#0;class#MqttService#0" expanded="false" />
+            <element signature="method#messageArrived#0;class#MqttService#0" expanded="false" />
+            <element signature="method#deliveryComplete#0;class#MqttService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/TimeIntervalHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="142" column="43" lean-forward="true" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
+          <folding>
+            <element signature="docComment;method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="method#verifyStatusWhenCreateAndLogout#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#verifyStatus#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#toSqlTime#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="method#calculateUnavailabiltyDuration#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#isBetweenAvailableTime#0;class#TimeIntervalHelper#0" expanded="false" />
+            <element signature="docComment;method#isBetweenAvailableTime#1;class#TimeIntervalHelper#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

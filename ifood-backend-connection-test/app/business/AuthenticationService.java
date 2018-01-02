@@ -75,7 +75,7 @@ public class AuthenticationService implements IAuthenticationRepository{
             userOutput.setToken(SecurityHelper.generateSessionToken(user.getEmail()));
             userOutput.setMinutesOffline(user.getMinutesOffline());
 
-            updateOfflineTime(user.getId(), user.getLastRequest());
+            this._userService.updateOfflineTime(user.getId(), user.getLastRequest());
 
             this.login(user.getId(), userOutput.getStatus());
 
@@ -133,25 +133,6 @@ public class AuthenticationService implements IAuthenticationRepository{
         } else{
             return TimeIntervalHelper.verifyStatus(schedules);
         }
-    }
-
-    /**
-     * check how long user has gone offline and update this indicator
-     * @param userId
-     * @throws AuthenticationException
-     */
-    public void updateOfflineTime(long userId, java.util.Date lastRequest) throws Exception{
-
-        java.util.Date now = TimeIntervalHelper.localDateTimeToDate();
-
-        if(lastRequest == null){
-            _userService.updateLastRequest(now, userId);
-        }else {
-            _userService.updateLastRequest(now, userId);
-            long minutes = TimeIntervalHelper.calculatesOfflineUserTime(lastRequest);
-            _userService.updateMinutesOffline(minutes, userId);
-        }
-
     }
 
     public void publishStatusMqttMessage(UserOutputDto dto){
