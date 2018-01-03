@@ -115,16 +115,5 @@ public class UserService implements IUserRepository{
         }
 
     }
-
-    public Status verifyStatus(long userId) throws Exception{
-
-        List<UnavailabilityScheduleOutputDto> schedules = _schedulesService.getByUserId(userId);
-
-        if ((schedules == null || schedules.size() == 0) &&
-                TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
-            return Status.AvailableOnline;
-        } else{
-            return TimeIntervalHelper.verifyStatus(schedules);
-        }
-    }
+    
 }
