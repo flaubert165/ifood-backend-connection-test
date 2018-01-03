@@ -80,8 +80,6 @@ export class RestaurantsQueryComponent implements OnInit {
 
       this.userSort = this.users.sort((a, b) => a.minutesOffline - b.minutesOffline);
 
-      console.log('agora');
-
     });
 
   }
