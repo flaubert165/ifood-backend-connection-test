@@ -19,12 +19,16 @@ export class AuthenticationService {
         if (user && user.token) {
           // store user details and jwt token in local storage to keep user logged in between page refreshes
           localStorage.setItem('currentUser', JSON.stringify(user));
+          /**
+           * Update the lastRequest for currentUser
+           */
+          this.updateLastRequest(user.id);
         }
       });
   }
 
   logout(user: User) {
-    if(!isUndefined(user)){
+    if(user != null && !isUndefined(user)){
       this.mqttService.unsafePublish('restaurants/logout/', user.id.toString(), {qos: 1, retain: true});
       this.updateLastRequest(user.id);
     }
