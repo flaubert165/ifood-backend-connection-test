@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { AlertService } from '../services/alert.service';
 import { AuthenticationService } from '../services/authentication.service';
 import {User} from "../models/user";
+import {MqttService} from "ngx-mqtt";
 
 @Component({
   moduleId: module.id,
@@ -19,7 +20,8 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private authenticationService: AuthenticationService,
-    private alertService: AlertService) {
+    private alertService: AlertService,
+    private mqttService: MqttService) {
     this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
   }
 
@@ -36,6 +38,10 @@ export class LoginComponent implements OnInit {
     this.authenticationService.login(this.model.email, this.model.password)
       .subscribe(
         data => {
+          /**
+           * Update the lastRequest for currentUser
+           */
+          this.authenticationService.updateLastRequest(this.currentUser.id);
           this.alertService.success('Login successful', true);
           this.router.navigate([this.returnUrl]);
         },

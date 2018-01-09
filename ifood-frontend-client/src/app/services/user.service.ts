@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { User } from '../models/user';
 import {environment} from "../../environments/environment";
+import {MqttService} from "ngx-mqtt";
 
 @Injectable()
 export class UserService {
-  constructor(private http: Http) { }
+  constructor(private http: Http, private mqttService: MqttService) { }
 
   getAll() {
     return this.http.get(environment.serverUrl + '/user', this.jwt()).map((response: Response) => response.json());
@@ -25,6 +26,13 @@ export class UserService {
 
   delete(id: string) {
     return this.http.delete(environment.serverUrl + '/user/' + id, this.jwt());
+  }
+
+  updateLastRequest(id: number){
+    /**
+     * Update the lastRequest for currentUser
+     */
+    this.mqttService.unsafePublish('restaurants/updateLasRequest/', id.toString(), {qos: 1, retain: true});
   }
 
   // private helper methods

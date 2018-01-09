@@ -8,7 +8,9 @@ import domain.entities.User;
 import domain.enums.Status;
 import exceptions.AuthenticationException;
 import exceptions.UserException;
+import infrastructure.MqttService;
 import infrastructure.repositories.IUserRepository;
+import play.libs.Json;
 import utils.SecurityHelper;
 import utils.TimeIntervalHelper;
 
@@ -17,17 +19,41 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
+import java.util.concurrent.TimeUnit;
 
 
 public class UserService implements IUserRepository{
 
     private IUserRepository _repository;
     private UnavailabilityScheduleService _schedulesService;
+    private MqttService _mqttService;
 
     @Inject
-    public UserService(IUserRepository repository, UnavailabilityScheduleService schedulesService){
+    public UserService(MqttService mqttService,
+                       IUserRepository repository,
+                       UnavailabilityScheduleService schedulesService){
         this._repository = repository;
         this._schedulesService = schedulesService;
+        this._mqttService = mqttService;
+
+        /**
+         * This observer listen the lastRequest channel and trigger de lastRequestUpdate method
+         */
+        this._mqttService.observer("restaurants/updateLasRequest/").subscribe(mqttMessage -> {
+            if(mqttMessage != null) {
+                long userId = new Long(mqttMessage.toString());
+                this.updateLastRequest(TimeIntervalHelper.localDateTimeToDate(), userId);
+            }
+        });
+
+
+        /**
+         * This observer monitoring if exists an unavailability schedule every 10 minutes
+         */
+        io.reactivex.Observable.interval(1, TimeUnit.MINUTES).subscribe(s -> {
+            this.verifyStatusPeriodicaly();
+        });
     }
 
     public void create(UserDto user) throws UserException {
@@ -113,6 +139,41 @@ public class UserService implements IUserRepository{
             long minutes = TimeIntervalHelper.calculatesOfflineUserTime(lastRequest);
             this._repository.updateMinutesOffline(minutes, userId);
         }
+
+    }
+
+    public void publishStatusMqttMessage(UserOutputDto dto){
+
+        this._mqttService.publish("restaurants/status/",
+                Json.stringify(Json.toJson(dto)).getBytes(), 1);
+    }
+
+    public void verifyStatusPeriodicaly() throws Exception {
+
+        List<UserOutputDto> users = this._repository.getUsers();
+
+        for(UserOutputDto user : users){
+
+            java.util.Date lastRequest = new java.util.Date(user.getLastRequest().getTime());
+
+            List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
+
+            if ((schedules != null && schedules.size() > 0) &&
+                    TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
+                user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
+                this._repository.updateStatus(user.getStatus(), user.getId());
+                publishStatusMqttMessage(user);
+            }
+
+            if (TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now())) &&
+                        (user.getStatus() == Status.AvailableOnline) &&
+                        (TimeIntervalHelper.calculatesOfflineUserTime(lastRequest) >= 2L)){
+                user.setStatus(Status.AvailableOffline);
+                this._repository.updateStatus(user.getStatus(), user.getId());
+                publishStatusMqttMessage(user);
+            }
+        }
+
 
     }
 

@@ -3,13 +3,17 @@ package presentation.controllers;
 import business.AuthenticationService;
 import com.google.inject.Inject;
 import domain.dto.inputs.SignInDto;
+import domain.entities.User;
 import exceptions.AuthenticationException;
 import exceptions.UserException;
+import io.reactivex.Observable;
 import play.libs.Json;
 import play.mvc.BodyParser;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
+
+import java.util.concurrent.TimeUnit;
 
 public class AuthenticationController extends Controller {
 

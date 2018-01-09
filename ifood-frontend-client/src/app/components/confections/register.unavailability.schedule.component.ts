@@ -3,6 +3,7 @@ import {Component, OnInit} from "@angular/core";
 import {UnavailabilityScheduleService} from "../../services/unavailability.schedule.service";
 import {User} from "../../models/user";
 import {Router} from "@angular/router";
+import {MqttService} from "ngx-mqtt";
 
 @Component({
   moduleId: module.id,
@@ -43,6 +44,10 @@ export class RegisterUnavailabilityScheduleComponent implements OnInit {
     this.scheduleService.create(this.model)
       .subscribe(
         data => {
+          /**
+           * Update the lastRequest for currentUser
+           */
+          this.scheduleService.updateLastRequest(this.currentUser.id);
           this.alertService.success('Registration successful', true);
           this.router.navigate(['/schedule']);
           this.loading = false;
@@ -56,14 +61,5 @@ export class RegisterUnavailabilityScheduleComponent implements OnInit {
 
   ngOnInit(): void {
 
-  }
-
-  changeStartDate(){
-    this.model.startTime = new Date(this.date1);
-
-  }
-
-  changeEndDate(){
-    this.model.endTime = new Date(this.date2);
   }
 }

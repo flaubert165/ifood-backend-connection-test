@@ -81,7 +81,6 @@ export class RestaurantsQueryComponent implements OnInit {
       this.userSort = this.users.sort((a, b) => a.minutesOffline - b.minutesOffline);
 
     });
-
   }
 
   private loadAllUsers() {
@@ -92,6 +91,10 @@ export class RestaurantsQueryComponent implements OnInit {
 
     });
 
+    /**
+     * Update the lastRequest for currentUser
+     */
+    this.userService.updateLastRequest(this.currentUser.id);
   }
 
 }

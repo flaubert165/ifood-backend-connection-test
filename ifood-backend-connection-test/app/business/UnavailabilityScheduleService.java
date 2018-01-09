@@ -7,6 +7,7 @@ import infrastructure.repositories.IUnavailabilityScheduleRepository;
 import utils.TimeIntervalHelper;
 
 import java.util.List;
+import java.util.Observable;
 
 public class UnavailabilityScheduleService implements IUnavailabilityScheduleRepository{
 
@@ -22,7 +23,6 @@ public class UnavailabilityScheduleService implements IUnavailabilityScheduleRep
         if(schedule ==  null){
             throw new Exception();
         }
-
         this._repository.create(schedule);
     }
 

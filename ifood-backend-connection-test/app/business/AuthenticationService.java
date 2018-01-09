@@ -43,6 +43,7 @@ public class AuthenticationService implements IAuthenticationRepository{
                 this.logout(id);
             }
         });
+
     }
 
     @Override
@@ -52,6 +53,7 @@ public class AuthenticationService implements IAuthenticationRepository{
 
     @Override
     public void logout(long id, Status status) throws AuthenticationException {
+
         this._repository.logout(id, status);
     }
 
@@ -76,7 +78,6 @@ public class AuthenticationService implements IAuthenticationRepository{
             userOutput.setMinutesOffline(user.getMinutesOffline());
 
             this._userService.updateOfflineTime(user.getId(), user.getLastRequest());
-
             this.login(user.getId(), userOutput.getStatus());
 
             publishStatusMqttMessage(userOutput);
@@ -99,7 +100,7 @@ public class AuthenticationService implements IAuthenticationRepository{
             UserOutputDto user = this._userService.getUserById(id);
 
             user.setStatus(verifyStatusOnLogout(user.getId()));
-
+            this._userService.updateLastRequest(TimeIntervalHelper.localDateTimeToDate(), user.getId());
             logout(user.getId(), user.getStatus());
 
             publishStatusMqttMessage(user);
@@ -113,7 +114,7 @@ public class AuthenticationService implements IAuthenticationRepository{
      */
     public Status verifyStatus(long userId) throws Exception{
 
-        List<UnavailabilityScheduleOutputDto> schedules = _schedulesService.getByUserId(userId);
+        List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(userId);
 
         if ((schedules == null || schedules.size() == 0) &&
                 TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
@@ -123,9 +124,9 @@ public class AuthenticationService implements IAuthenticationRepository{
         }
     }
 
-    public Status verifyStatusOnLogout(long userId) throws Exception{
+    public Status verifyStatusOnLogout(long userId) throws Exception {
 
-        List<UnavailabilityScheduleOutputDto> schedules = _schedulesService.getByUserId(userId);
+        List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(userId);
 
         if ((schedules == null || schedules.size() == 0) &&
                 TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {

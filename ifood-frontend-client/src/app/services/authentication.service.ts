@@ -24,7 +24,15 @@ export class AuthenticationService {
 
   logout(user: User) {
     this.mqttService.unsafePublish('restaurants/logout/', user.id.toString(), {qos: 1, retain: true});
+    this.updateLastRequest(user.id);
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
+  }
+
+  updateLastRequest(id: number){
+    /**
+     * Update the lastRequest for currentUser
+     */
+    this.mqttService.unsafePublish('restaurants/updateLasRequest/', id.toString(), {qos: 1, retain: true});
   }
 }
