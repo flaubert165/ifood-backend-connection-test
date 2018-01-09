@@ -4,6 +4,7 @@ import 'rxjs/add/operator/map';
 import {environment} from "../../environments/environment";
 import {User} from "../models/user";
 import {MqttService} from "ngx-mqtt";
+import {isUndefined} from "util";
 
 
 @Injectable()
@@ -23,7 +24,9 @@ export class AuthenticationService {
   }
 
   logout(user: User) {
-    this.mqttService.unsafePublish('restaurants/logout/', user.id.toString(), {qos: 1, retain: true});
+    if(!isUndefined(user)){
+      this.mqttService.unsafePublish('restaurants/logout/', user.id.toString(), {qos: 1, retain: true});
+    }
     this.updateLastRequest(user.id);
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');

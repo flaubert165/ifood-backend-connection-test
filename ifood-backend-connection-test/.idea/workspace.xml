@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,13 +43,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MqttService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/infrastructure/MqttService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="446">
               <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentication.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+              <folding>
+                <element signature="e#1304#1361#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -231,10 +240,10 @@
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/user.service.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/confections/register.restaurant.component.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
-        <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" />
         <option value="$PROJECT_DIR$/app/business/UserService.java" />
         <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/login.component.ts" />
+        <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" />
       </list>
     </option>
   </component>
@@ -634,7 +643,7 @@
       <workItem from="1514382272959" duration="33310000" />
       <workItem from="1514433333891" duration="24427000" />
       <workItem from="1514996088115" duration="205000" />
-      <workItem from="1515020198366" duration="17576000" />
+      <workItem from="1515020198366" duration="17764000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -661,7 +670,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262410000" />
+    <option name="totallyTimeSpent" value="262598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,16 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="e#1234#1291#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/services/user.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -1241,6 +1240,16 @@
           <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#1304#1361#0" expanded="false" />
           </folding>
         </state>
       </provider>
