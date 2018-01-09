@@ -49,7 +49,7 @@ public class UserService implements IUserRepository{
 
 
         /**
-         * This observer monitoring if exists an unavailability schedule every 10 minutes
+         * This observer verify if exists an unavailability schedule every minute
          */
         io.reactivex.Observable.interval(1, TimeUnit.MINUTES).subscribe(s -> {
             this.verifyStatusPeriodicaly();
