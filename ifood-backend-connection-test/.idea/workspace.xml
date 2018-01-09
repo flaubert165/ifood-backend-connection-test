@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="921f2090-75d6-4533-9150-db8f6f30f84a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/presentation/Secured.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/AuthenticationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/UnavailabilityScheduleService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/UnavailabilityScheduleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/business/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/AuthenticationController.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/presentation/controllers/AuthenticationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/AuthenticationService.java" afterPath="$PROJECT_DIR$/app/business/AuthenticationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java" afterPath="$PROJECT_DIR$/app/business/UnavailabilityScheduleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/business/UserService.java" afterPath="$PROJECT_DIR$/app/business/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java" afterPath="$PROJECT_DIR$/app/presentation/controllers/AuthenticationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/confections/register.restaurant.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/confections/register.restaurant.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/confections/register.unavailability.schedule.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/confections/register.unavailability.schedule.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/login.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/unavailability.schedules.query.component.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/unavailability.schedules.query.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/unavailability.schedule.service.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/unavailability.schedule.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/user.service.ts" afterPath="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/user.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,16 +55,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="995">
-              <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
-                <element signature="method#logout#1;class#AuthenticationService#0" expanded="false" />
                 <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
                 <element signature="method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
                 <element signature="method#verifyStatusOnLogout#0;class#AuthenticationService#0" expanded="false" />
@@ -114,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/business/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="163" column="28" lean-forward="false" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
+            <state relative-caret-position="1573">
+              <caret line="173" column="13" lean-forward="true" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
               <folding>
                 <element signature="method#create#0;class#UserService#0" expanded="false" />
                 <element signature="method#getUsers#0;class#UserService#0" expanded="false" />
@@ -229,8 +208,8 @@
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/queries/restaurants.query.component.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/components/login.component.ts" />
         <option value="$PROJECT_DIR$/../ifood-frontend-client/src/app/services/authentication.service.ts" />
-        <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
         <option value="$PROJECT_DIR$/app/business/UserService.java" />
+        <option value="$PROJECT_DIR$/app/business/AuthenticationService.java" />
       </list>
     </option>
   </component>
@@ -630,7 +609,7 @@
       <workItem from="1514382272959" duration="33310000" />
       <workItem from="1514433333891" duration="24427000" />
       <workItem from="1514996088115" duration="205000" />
-      <workItem from="1515020198366" duration="16571000" />
+      <workItem from="1515020198366" duration="16886000" />
     </task>
     <task id="LOCAL-00001" summary="initial backend">
       <created>1514288508524</created>
@@ -657,7 +636,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261405000" />
+    <option name="totallyTimeSpent" value="261720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -770,12 +749,6 @@
           <line>54</line>
           <properties />
           <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/business/UserService.java</url>
-          <line>172</line>
-          <properties />
-          <option name="timeStamp" value="305" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="307" />
@@ -1216,27 +1189,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="995">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#logout#1;class#AuthenticationService#0" expanded="false" />
-            <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#verifyStatusOnLogout#0;class#AuthenticationService#0" expanded="false" />
-            <element signature="method#publishStatusMqttMessage#0;class#AuthenticationService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/business/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="163" column="28" lean-forward="false" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
+        <state relative-caret-position="1573">
+          <caret line="173" column="13" lean-forward="true" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
           <folding>
             <element signature="method#create#0;class#UserService#0" expanded="false" />
             <element signature="method#getUsers#0;class#UserService#0" expanded="false" />
@@ -1244,6 +1200,22 @@
             <element signature="method#delete#0;class#UserService#0" expanded="false" />
             <element signature="method#updateOfflineTime#0;class#UserService#0" expanded="false" />
             <element signature="method#publishStatusMqttMessage#0;class#UserService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/business/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#login#1;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#logout#1;class#AuthenticationService#0" expanded="false" />
+            <element signature="docComment;method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="method#verifyStatus#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="method#verifyStatusOnLogout#0;class#AuthenticationService#0" expanded="false" />
+            <element signature="method#publishStatusMqttMessage#0;class#AuthenticationService#0" expanded="false" />
           </folding>
         </state>
       </provider>

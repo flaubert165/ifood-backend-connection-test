@@ -100,7 +100,6 @@ public class AuthenticationService implements IAuthenticationRepository{
             UserOutputDto user = this._userService.getUserById(id);
 
             user.setStatus(verifyStatusOnLogout(user.getId()));
-            this._userService.updateLastRequest(TimeIntervalHelper.localDateTimeToDate(), user.getId());
             logout(user.getId(), user.getStatus());
 
             publishStatusMqttMessage(user);
