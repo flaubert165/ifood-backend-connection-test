@@ -43,4 +43,9 @@ public class UnavailabilityScheduleService implements IUnavailabilityScheduleRep
         this._repository.delete(id);
 
     }
+
+    @Override
+    public List<UnavailabilityScheduleOutputDto> getByAllByUserId(long userId) throws Exception {
+        return  this._repository.getByAllByUserId(userId);
+    }
 }

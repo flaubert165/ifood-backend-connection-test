@@ -26,7 +26,7 @@ public class UnavalabilityScheduleController extends Controller {
 
 
     public Result getByUserId(long userId) throws Exception {
-        return  ok(Json.toJson(this._service.getByUserId(userId)));
+        return  ok(Json.toJson(this._service.getByAllByUserId(userId)));
     }
 
     public Result delete(long id) throws Exception{

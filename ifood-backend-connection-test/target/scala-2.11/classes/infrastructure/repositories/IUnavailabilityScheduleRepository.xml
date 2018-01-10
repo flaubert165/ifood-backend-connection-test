@@ -7,6 +7,9 @@
         SELECT * FROM unavailability_schedule WHERE userId = #{arg0} AND
         (date(start) = date(now())) AND (date(end) = date(now()));
     </select>
+    <select id="getByAllByUserId" resultType="domain.dto.outputs.UnavailabilityScheduleOutputDto">
+        SELECT * FROM unavailability_schedule WHERE userId = #{arg0}
+    </select>
     <insert id="create" useGeneratedKeys="true">
         INSERT INTO unavailability_schedule
         (
