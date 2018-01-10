@@ -1,0 +1,8 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="infrastructure.repositories.queries.IUserQueryRepository">
+    <select id="filter" resultType="domain.dto.outputs.UserOutputDto">
+        SELECT * FROM user
+        ORDER BY minutesOffline
+        ASC LIMIT #{arg0.index}, #{arg0.limit};
+    </select>
+</mapper>

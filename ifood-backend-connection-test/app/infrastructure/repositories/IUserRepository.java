@@ -6,9 +6,7 @@ import domain.entities.User;
 import domain.enums.Status;
 import exceptions.AuthenticationException;
 import exceptions.UserException;
-
 import java.sql.Date;
-import java.time.LocalDateTime;
 import java.util.List;
 
 public interface IUserRepository {

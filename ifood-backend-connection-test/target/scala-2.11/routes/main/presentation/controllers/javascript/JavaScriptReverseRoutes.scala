@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/italosantana/Desktop/ifood-backend-connection-test/ifood-backend-connection-test/conf/routes
-// @DATE:Thu Dec 28 10:18:55 BRT 2017
+// @DATE:Wed Jan 10 10:38:33 BRT 2018
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package presentation.controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:14
+  // @LINE:15
   class ReverseUnavalabilityScheduleController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package presentation.controllers.javascript {
     }
 
   
-    // @LINE:14
+    // @LINE:15
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UnavalabilityScheduleController.create",
       """
@@ -33,7 +33,7 @@ package presentation.controllers.javascript {
       """
     )
   
-    // @LINE:16
+    // @LINE:17
     def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UnavalabilityScheduleController.delete",
       """
@@ -43,7 +43,7 @@ package presentation.controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:16
     def getByUserId: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UnavalabilityScheduleController.getByUserId",
       """
@@ -73,7 +73,7 @@ package presentation.controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:12
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "presentation.controllers.UserController.create",
       """

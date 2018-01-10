@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/italosantana/Desktop/ifood-backend-connection-test/ifood-backend-connection-test/conf/routes
-// @DATE:Thu Dec 28 10:18:55 BRT 2017
+// @DATE:Wed Jan 10 10:38:33 BRT 2018
 
 package router
 
@@ -19,11 +19,13 @@ class Routes(
   // @LINE:6
   AuthenticationController_1: presentation.controllers.AuthenticationController,
   // @LINE:10
-  UserController_3: presentation.controllers.UserController,
-  // @LINE:14
-  UnavalabilityScheduleController_0: presentation.controllers.UnavalabilityScheduleController,
-  // @LINE:19
-  Assets_2: controllers.Assets,
+  UserController_0: presentation.controllers.UserController,
+  // @LINE:11
+  UserQueryController_2: presentation.controllers.queries.UserQueryController,
+  // @LINE:15
+  UnavalabilityScheduleController_3: presentation.controllers.UnavalabilityScheduleController,
+  // @LINE:20
+  Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -32,18 +34,20 @@ class Routes(
     // @LINE:6
     AuthenticationController_1: presentation.controllers.AuthenticationController,
     // @LINE:10
-    UserController_3: presentation.controllers.UserController,
-    // @LINE:14
-    UnavalabilityScheduleController_0: presentation.controllers.UnavalabilityScheduleController,
-    // @LINE:19
-    Assets_2: controllers.Assets
-  ) = this(errorHandler, AuthenticationController_1, UserController_3, UnavalabilityScheduleController_0, Assets_2, "/")
+    UserController_0: presentation.controllers.UserController,
+    // @LINE:11
+    UserQueryController_2: presentation.controllers.queries.UserQueryController,
+    // @LINE:15
+    UnavalabilityScheduleController_3: presentation.controllers.UnavalabilityScheduleController,
+    // @LINE:20
+    Assets_4: controllers.Assets
+  ) = this(errorHandler, AuthenticationController_1, UserController_0, UserQueryController_2, UnavalabilityScheduleController_3, Assets_4, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, AuthenticationController_1, UserController_3, UnavalabilityScheduleController_0, Assets_2, prefix)
+    new Routes(errorHandler, AuthenticationController_1, UserController_0, UserQueryController_2, UnavalabilityScheduleController_3, Assets_4, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -54,6 +58,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """auth/login""", """presentation.controllers.AuthenticationController.login()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """auth/status""", """presentation.controllers.AuthenticationController.status()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user""", """presentation.controllers.UserController.getAll()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/query""", """presentation.controllers.queries.UserQueryController.filter()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/register""", """presentation.controllers.UserController.create()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """scheduling/register""", """presentation.controllers.UnavalabilityScheduleController.create()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """scheduling/""" + "$" + """id<[^/]+>""", """presentation.controllers.UnavalabilityScheduleController.getByUserId(id:Long)"""),
@@ -106,7 +111,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user")))
   )
   private[this] lazy val presentation_controllers_UserController_getAll2_invoker = createInvoker(
-    UserController_3.getAll(),
+    UserController_0.getAll(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "presentation.controllers.UserController",
@@ -119,11 +124,28 @@ class Routes(
   )
 
   // @LINE:11
-  private[this] lazy val presentation_controllers_UserController_create3_route = Route("POST",
+  private[this] lazy val presentation_controllers_queries_UserQueryController_filter3_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/query")))
+  )
+  private[this] lazy val presentation_controllers_queries_UserQueryController_filter3_invoker = createInvoker(
+    UserQueryController_2.filter(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "presentation.controllers.queries.UserQueryController",
+      "filter",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """user/query"""
+    )
+  )
+
+  // @LINE:12
+  private[this] lazy val presentation_controllers_UserController_create4_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/register")))
   )
-  private[this] lazy val presentation_controllers_UserController_create3_invoker = createInvoker(
-    UserController_3.create(),
+  private[this] lazy val presentation_controllers_UserController_create4_invoker = createInvoker(
+    UserController_0.create(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "presentation.controllers.UserController",
@@ -135,12 +157,12 @@ class Routes(
     )
   )
 
-  // @LINE:14
-  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_create4_route = Route("POST",
+  // @LINE:15
+  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_create5_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("scheduling/register")))
   )
-  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_create4_invoker = createInvoker(
-    UnavalabilityScheduleController_0.create(),
+  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_create5_invoker = createInvoker(
+    UnavalabilityScheduleController_3.create(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "presentation.controllers.UnavalabilityScheduleController",
@@ -152,12 +174,12 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_getByUserId5_route = Route("GET",
+  // @LINE:16
+  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_getByUserId6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("scheduling/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_getByUserId5_invoker = createInvoker(
-    UnavalabilityScheduleController_0.getByUserId(fakeValue[Long]),
+  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_getByUserId6_invoker = createInvoker(
+    UnavalabilityScheduleController_3.getByUserId(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "presentation.controllers.UnavalabilityScheduleController",
@@ -169,12 +191,12 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_delete6_route = Route("DELETE",
+  // @LINE:17
+  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_delete7_route = Route("DELETE",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("scheduling/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_delete6_invoker = createInvoker(
-    UnavalabilityScheduleController_0.delete(fakeValue[Long]),
+  private[this] lazy val presentation_controllers_UnavalabilityScheduleController_delete7_invoker = createInvoker(
+    UnavalabilityScheduleController_3.delete(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "presentation.controllers.UnavalabilityScheduleController",
@@ -186,12 +208,12 @@ class Routes(
     )
   )
 
-  // @LINE:19
-  private[this] lazy val controllers_Assets_at7_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_Assets_at8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ui")))
   )
-  private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
-    Assets_2.at(fakeValue[String], fakeValue[String]),
+  private[this] lazy val controllers_Assets_at8_invoker = createInvoker(
+    Assets_4.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -203,12 +225,12 @@ class Routes(
     )
   )
 
-  // @LINE:20
-  private[this] lazy val controllers_Assets_at8_route = Route("GET",
+  // @LINE:21
+  private[this] lazy val controllers_Assets_at9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at8_invoker = createInvoker(
-    Assets_2.at(fakeValue[String], fakeValue[String]),
+  private[this] lazy val controllers_Assets_at9_invoker = createInvoker(
+    Assets_4.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -238,43 +260,49 @@ class Routes(
     // @LINE:10
     case presentation_controllers_UserController_getAll2_route(params) =>
       call { 
-        presentation_controllers_UserController_getAll2_invoker.call(UserController_3.getAll())
+        presentation_controllers_UserController_getAll2_invoker.call(UserController_0.getAll())
       }
   
     // @LINE:11
-    case presentation_controllers_UserController_create3_route(params) =>
+    case presentation_controllers_queries_UserQueryController_filter3_route(params) =>
       call { 
-        presentation_controllers_UserController_create3_invoker.call(UserController_3.create())
+        presentation_controllers_queries_UserQueryController_filter3_invoker.call(UserQueryController_2.filter())
       }
   
-    // @LINE:14
-    case presentation_controllers_UnavalabilityScheduleController_create4_route(params) =>
+    // @LINE:12
+    case presentation_controllers_UserController_create4_route(params) =>
       call { 
-        presentation_controllers_UnavalabilityScheduleController_create4_invoker.call(UnavalabilityScheduleController_0.create())
+        presentation_controllers_UserController_create4_invoker.call(UserController_0.create())
       }
   
     // @LINE:15
-    case presentation_controllers_UnavalabilityScheduleController_getByUserId5_route(params) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        presentation_controllers_UnavalabilityScheduleController_getByUserId5_invoker.call(UnavalabilityScheduleController_0.getByUserId(id))
+    case presentation_controllers_UnavalabilityScheduleController_create5_route(params) =>
+      call { 
+        presentation_controllers_UnavalabilityScheduleController_create5_invoker.call(UnavalabilityScheduleController_3.create())
       }
   
     // @LINE:16
-    case presentation_controllers_UnavalabilityScheduleController_delete6_route(params) =>
+    case presentation_controllers_UnavalabilityScheduleController_getByUserId6_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        presentation_controllers_UnavalabilityScheduleController_delete6_invoker.call(UnavalabilityScheduleController_0.delete(id))
+        presentation_controllers_UnavalabilityScheduleController_getByUserId6_invoker.call(UnavalabilityScheduleController_3.getByUserId(id))
       }
   
-    // @LINE:19
-    case controllers_Assets_at7_route(params) =>
-      call(Param[String]("path", Right("/public")), Param[String]("file", Right("index.html"))) { (path, file) =>
-        controllers_Assets_at7_invoker.call(Assets_2.at(path, file))
+    // @LINE:17
+    case presentation_controllers_UnavalabilityScheduleController_delete7_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        presentation_controllers_UnavalabilityScheduleController_delete7_invoker.call(UnavalabilityScheduleController_3.delete(id))
       }
   
     // @LINE:20
     case controllers_Assets_at8_route(params) =>
+      call(Param[String]("path", Right("/public")), Param[String]("file", Right("index.html"))) { (path, file) =>
+        controllers_Assets_at8_invoker.call(Assets_4.at(path, file))
+      }
+  
+    // @LINE:21
+    case controllers_Assets_at9_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at8_invoker.call(Assets_2.at(path, file))
+        controllers_Assets_at9_invoker.call(Assets_4.at(path, file))
       }
   }
 }

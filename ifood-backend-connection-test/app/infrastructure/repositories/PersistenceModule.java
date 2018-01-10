@@ -1,6 +1,7 @@
 package infrastructure.repositories;
 
 import infrastructure.DataSourceProvider;
+import infrastructure.repositories.queries.IUserQueryRepository;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 
 public class PersistenceModule extends org.mybatis.guice.MyBatisModule {
@@ -12,5 +13,6 @@ public class PersistenceModule extends org.mybatis.guice.MyBatisModule {
         addMapperClass(IAuthenticationRepository.class);
         addMapperClass(IUserRepository.class);
         addMapperClass(IUnavailabilityScheduleRepository.class);
+        addMapperClass(IUserQueryRepository.class);
     }
 }

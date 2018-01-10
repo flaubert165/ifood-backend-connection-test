@@ -8,6 +8,7 @@ GET     /auth/status                presentation.controllers.AuthenticationContr
 
 #USER ROUTES
 GET     /user                       presentation.controllers.UserController.getAll()
+POST    /user/query                 presentation.controllers.queries.UserQueryController.filter()
 POST    /user/register              presentation.controllers.UserController.create()
 
 #SCHEDULE ROUTES

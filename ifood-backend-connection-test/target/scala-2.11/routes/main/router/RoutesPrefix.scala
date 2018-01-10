@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/italosantana/Desktop/ifood-backend-connection-test/ifood-backend-connection-test/conf/routes
-// @DATE:Thu Dec 28 10:18:55 BRT 2017
+// @DATE:Wed Jan 10 10:38:33 BRT 2018
 
 
 package router {
