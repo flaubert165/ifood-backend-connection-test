@@ -80,7 +80,7 @@ public class UserService implements IUserRepository{
 
                     List<UnavailabilityScheduleOutputDto> schedules = this._schedulesService.getByUserId(user.getId());
 
-                    user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
+                    user.setStatus(TimeIntervalHelper.verifyStatus(schedules, false));
                     this._repository.updateStatus(user.getStatus(), user.getId());
                     this.updateOfflineTime(user.getId(), user.getLastRequest());
                 }
@@ -160,7 +160,7 @@ public class UserService implements IUserRepository{
 
             if ((schedules != null && schedules.size() > 0) &&
                     TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
-                user.setStatus(TimeIntervalHelper.verifyStatus(schedules));
+                user.setStatus(TimeIntervalHelper.verifyStatus(schedules, false));
                 this._repository.updateStatus(user.getStatus(), user.getId());
                 publishStatusMqttMessage(user);
             }

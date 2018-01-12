@@ -119,7 +119,7 @@ public class AuthenticationService implements IAuthenticationRepository{
                 TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
             return Status.AvailableOnline;
         } else{
-            return TimeIntervalHelper.verifyStatus(schedules);
+            return TimeIntervalHelper.verifyStatus(schedules, false);
         }
     }
 
@@ -131,7 +131,7 @@ public class AuthenticationService implements IAuthenticationRepository{
                 TimeIntervalHelper.isBetweenAvailableTime(TimeIntervalHelper.toSqlTime(LocalTime.now()))) {
             return Status.AvailableOffline;
         } else{
-            return TimeIntervalHelper.verifyStatus(schedules);
+            return TimeIntervalHelper.verifyStatus(schedules, true);
         }
     }
 
