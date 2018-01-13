@@ -11,16 +11,14 @@ import {User} from "../../models/user";
 })
 
 export class RegisterRestaurantComponent {
-  currentUser: User;
   model: any = {};
   loading = false;
 
   constructor(
     private router: Router,
     private userService: UserService,
-    private alertService: AlertService,
-    private mqttService: MqttService) {
-    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    private alertService: AlertService) {
+    /*this.currentUser = JSON.parse(localStorage.getItem('currentUser'));*/
   }
 
   register() {
@@ -31,9 +29,10 @@ export class RegisterRestaurantComponent {
           /**
            * Update the lastRequest for currentUser
            */
-          this.userService.updateLastRequest(this.currentUser.id);
+          /*this.userService.updateLastRequest(this.currentUser.id);*/
           this.alertService.success('Registration successful', true);
-          this.router.navigate(['']);
+          this.router.navigate(['/login']);
+          this.loading = false;
         },
         error => {
           this.alertService.error(error._body);
