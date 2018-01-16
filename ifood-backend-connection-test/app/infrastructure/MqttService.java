@@ -25,7 +25,7 @@ public class MqttService implements MqttCallbackExtended{
             mqttConnectOptions.setAutomaticReconnect(true);
             mqttConnectOptions.setKeepAliveInterval(120);
             mqttConnectOptions.setUserName(ConfigFactory.load().getString("mqtt.broker.user"));
-            mqttConnectOptions.setPassword(ConfigFactory.load().getString("mqtt.broker.host").toCharArray());
+            mqttConnectOptions.setPassword(ConfigFactory.load().getString("mqtt.broker.password").toCharArray());
             client.connect(mqttConnectOptions);
 
         } catch (MqttException e) {
